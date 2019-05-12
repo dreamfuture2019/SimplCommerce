@@ -75,4 +75,6 @@
   <Target Name="CopyModule" AfterTargets="Build">
     <CopyModuleTask ProjectDir="$(ProjectDir)" TargetFramework="netcoreapp2.2" BuildConfiguration="$(ConfigurationName)" />
   </Target>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JSONSchema="http://json.schemastore.org/appsscript" /></VisualStudio></ProjectExtensions>
 </Project>
