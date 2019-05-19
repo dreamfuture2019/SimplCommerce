@@ -141,10 +141,34 @@ header.header .header-main .customer-support-text .text {
 .login-reg ul li ul.lang-selector li a {
     color: #393a44;
 }
+/* ------------------------------section_policy----------------------------- */
+.section_policy_content img{
+    max-width: 40px;
+    float: left;
+    margin-right: 10px;
+}
+.section-policy-padding{
+    padding-left: 50px;
+}
+.section-policy-padding h3{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+    color: #eb3e32;
+}
+.section_policy_title{
+    font-size: 14px;
+    color: #888;
+}
+
+
+
+
+
 
 /* ------------------------------Footer----------------------------- */
-.footer-content {    
-    background-image: url(~/themes/SampleTheme/bg-footer.png) repeat;
+.footer-content {
+    background-color: #393a44 !important;    
 }
 .footer-content .row {
     padding-top: 10px;
@@ -154,4 +178,10 @@ header.header .header-main .customer-support-text .text {
 }
 .footer-content h4.company-name{
     color: #ffd800;
+}
+.footer-content ul li {
+    color: #ffffff;
+}
+.footer-content ul li span, .footer-content ul li a {
+    color: #d4d4d4 !important;
 }
