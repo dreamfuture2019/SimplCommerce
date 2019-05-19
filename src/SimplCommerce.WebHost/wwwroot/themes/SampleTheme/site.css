@@ -63,14 +63,20 @@ header.header .header-main .customer-support-text .text {
 .navbar-toggler{
     display: none;
 }
+.navbar{
+    background-color: #393a44 !important;
+}
 .main-nav {
-    background-color: #393a44;
+    
     min-height: 55px;
     margin-bottom: 0;
     border: none;
 }
 #navbarMain > ul {
     margin: 0;
+}
+.top_nav .navbar-nav {
+    display: inline;
 }
 .navbar-light .navbar-nav .nav-link {
     color: rgb(255, 255, 255);
