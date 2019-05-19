@@ -181,7 +181,20 @@ header.header .header-main .customer-support-text .text {
 }
 .footer-content ul li {
     color: #ffffff;
+    list-style: none;
 }
 .footer-content ul li span, .footer-content ul li a {
     color: #d4d4d4 !important;
+}
+.footer-content ul.info{
+    padding: 0;
+}
+.footer-content ul.info li .fa-map-marker{
+    padding-right: 10px;
+}
+.footer-content ul.info li .fa-phone{
+    padding-right: 6px;
+}
+.footer-content ul.info li .fa-envelope-o{
+    padding-right: 2px;
 }
