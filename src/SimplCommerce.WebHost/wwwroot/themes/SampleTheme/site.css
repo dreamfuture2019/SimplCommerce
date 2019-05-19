@@ -63,17 +63,32 @@ header.header .header-main .customer-support-text .text {
 .navbar-toggler{
     display: none;
 }
-.navbar-nav {
-    flex-direction: unset;
+.main-nav {
+    background-color: #393a44;
+    min-height: 55px;
+    margin-bottom: 0;
+    border: none;
+}
+#navbarMain > ul {
+    margin: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
 }
 .header-menu{
-
-    display: block;
-    float: left;
-    width: 100%;
-    height: 55px;
+    display: block;    
     background: #393a44;
 }
+.btco-hover-menu .collapse ul > li:hover > a {
+    background: #ffd800;
+}
+.btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu {
+    background: #ffd800;
+}
+.btco-hover-menu .collapse ul ul > li:hover > a, .navbar .show .dropdown-menu > li > a:focus, .navbar .show .dropdown-menu > li > a:hover {
+    background: #f1cf14;
+}
+
 .category-title {
     padding: 0px 20px;
     position: relative;
@@ -89,7 +104,7 @@ header.header .header-main .customer-support-text .text {
     padding: 9px 0;
 }
 .search-input .form-control{
-    width: 245px;
+    width: 255px;
     border-radius: 0;
 }
 .search-category .form-control{   
@@ -112,6 +127,7 @@ header.header .header-main .customer-support-text .text {
     top: 9px;
     right: 0px;
     padding-top: 8px;
+    padding-right: 0;
 }   
 .cart-btn .cart-badge a{
     color: #fff;
