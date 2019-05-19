@@ -3,7 +3,7 @@
     color: #ecebeb !important;
 }
 .top-link {
-    width: 100%;
+
     border-bottom: 1px solid rgba(255,255,255,0.17);    
 }
 /* .top-nav, .login-reg{
@@ -42,7 +42,7 @@
 .customer-support-text img {
     max-width: 40px;
     position: absolute;
-    right: 125px;
+    right: 140px;
     top: 40%;
     transform: translate(0, -50%);
 }
@@ -80,5 +80,39 @@ header.header .header-main .customer-support-text .text {
     height: 55px;
     line-height: 55px;
     background: #ffba00;
+    color: #fff;
+}
+.navbar-collapse ul li a{
+    color: #fff;
+}
+.search-box {
+    padding: 9px 0;
+}
+.search-input .form-control{
+    width: 245px;
+    border-radius: 0;
+}
+.search-category .form-control{   
+    border-radius: 0;
+}
+.search-btn{
+    position: relative;
+    border: 0 none;
+    background: #ffd800;
+    width: 47px;
+    float: left;
+    text-align: center;
+    height: 38px;
+    cursor: pointer;
+    color: #363636;
+    margin-left: 3px;
+}
+.cart-btn .cart-badge {
+    position: relative;
+    top: 9px;
+    right: 0px;
+    padding-top: 8px;
+}   
+.cart-btn .cart-badge a{
     color: #fff;
 }
