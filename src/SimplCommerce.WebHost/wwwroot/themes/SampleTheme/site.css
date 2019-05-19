@@ -138,3 +138,20 @@ header.header .header-main .customer-support-text .text {
 .cart-btn .cart-badge a{
     color: #fff;
 }
+.login-reg ul li ul.lang-selector li a {
+    color: #393a44;
+}
+
+/* ------------------------------Footer----------------------------- */
+.footer-content {    
+    background-image: url(~/themes/SampleTheme/bg-footer.png) repeat;
+}
+.footer-content .row {
+    padding-top: 10px;
+}
+.footer-content h4{
+    color: #fff;
+}
+.footer-content h4.company-name{
+    color: #ffd800;
+}

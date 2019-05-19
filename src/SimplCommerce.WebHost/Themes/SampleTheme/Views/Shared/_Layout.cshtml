@@ -95,27 +95,75 @@
            @RenderBody()
         </div>
     </div>
+
+    <div class="section_policy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 section_policy_content">
+                    <img src="~/themes/SampleTheme/policy_image_1.svg" alt="Bảo đảm chất lượng">
+                    <div class="section-policy-padding">
+                        <h3>Bảo đảm chất lượng</h3>
+                        <div class="section_policy_title">Sản phẩm bảo đảm chất lượng.</div>
+                    </div>
+                </div>
+                <div class="col-md-3 section_policy_content">
+                    <img src="~/themes/SampleTheme/policy_image_2.svg" alt="Miễn phí giao hàng">
+                    <div class="section-policy-padding">
+                            <h3>Miễn phí giao hàng</h3>
+                            <div class="section_policy_title">Cho đơn hàng từ 2 triệu đồng.</div>
+                    </div>
+                </div>
+                <div class="col-md-3 section_policy_content">
+                    <img src="~/themes/SampleTheme/policy_image_3.svg" alt="Thanh toán">
+                    <div class="section-policy-padding">
+                        <h3>Thanh toán</h3>
+                        <div class="section_policy_title">Nhận hàng và thanh toán tại nhà</div>
+                    </div>
+                </div>
+                <div class="col-md-3 section_policy_content">
+                    <img src="~/themes/SampleTheme/policy_image_4.svg" alt="Đổi trả hàng">
+                    <div class="section-policy-padding">
+                        <h3>Đổi trả hàng</h3>
+                        <div class="section_policy_title">Trong vòng 7 ngày.</div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>    
     <div class="footer-content">
             <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <h4>@Localizer["Customer Service"]</h4>
-                    <vc:menu menu-id="1"></vc:menu>
-                </div>
-                <div class="col-md-3">
-                    <h4>Information</h4>
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <h4 class="company-name">CÔNG TY TNHH FUSUN</h4>                    
+                        <ul class="info">
+							<li>
+								<i class="icon ion-ios-location"></i>
+								<span class="address">
+									Địa chỉ: Số, Đường, Phường, Quận, TP
+								</span>
+							</li>
+							<li>
+								<i class="icon ion-android-call"></i>
+								<a class="fone" href="tel:0933392977">Điện thoại: 0933 39 29 77</a>
+							</li>
+							<li>
+								<i class="icon ion-email"></i>
+								<a href="mailto:Sale@fusuntech.com  ">Email: Sale@fusuntech.com</a>
+							</li>
+						</ul>            
+                </div>                
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <h4>THÔNG TIN</h4>
                     <vc:menu menu-id="2"></vc:menu>
                 </div>
-                <div class="col-md-6">
-                    <h4>SimplCommerce</h4>
-                    <p>The first ecommerce system built on .NET Core.</p>
-                    <p>Simple to use and easy to customize</p>
-                    <p>Cross platform and Open source</p>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <h4>@Localizer["HỖ TRỢ KHÁCH HÀNG"]</h4>
+                    <vc:menu menu-id="1"></vc:menu>
                 </div>
             </div>
-            <hr />
-            <p class="pull-left">&copy; @DateTime.Now.Year - SimplCommerce</p>
-            <p class="pull-right">Powered by <a href="http://www.SimplCommerce.com"><strong>SimplCommerce</strong></a></p>
+            
+            <p class="pull-left">&copy; @DateTime.Now.Year - Fusun</p>
+            <p class="pull-right">Powered by <a href="http://www.dtech24h.com"><strong>Dtech24h.com</strong></a></p>
         </div>
     </div>
     <div id="shopModal" class="modal fade" tabindex="-1" role="dialog">
