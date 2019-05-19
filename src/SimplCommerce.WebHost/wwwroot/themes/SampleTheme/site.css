@@ -4,22 +4,46 @@
 }
 .top-link {
     width: 100%;
-    border-bottom: 1px solid rgba(255,255,255,0.17);
-    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.17);    
 }
+/* .top-nav, .login-reg{
+    padding-right: 0px;
+} */
 .top-link ul li a{
     color: #fff;
+    float: left;
+    padding: 0.5rem 0.5rem;
 }
-.customer-support-text {
-    float: right;
+.top-link ul li a:hover{
+    text-decoration: none;
+}
+.logo img {
+    height: 55px;
+    margin: 15px 0;
+}
+.company_info{
+    text-align: center;
+}
+.company_info h2{
+    text-transform: uppercase;
+    margin: 7px 0;
+}
+.company_info p{
+    margin: 0;
+}
+.customer-support-text {    
     position: relative;
     margin-top: 15px;
+    width: 20%;
+}
+.customer-support-text .text{
+    float: right;
 }
 .customer-support-text img {
     max-width: 40px;
     position: absolute;
-    left: 0;
-    top: 50%;
+    right: 125px;
+    top: 40%;
     transform: translate(0, -50%);
 }
 header.header .header-main .customer-support-text .text {
@@ -38,6 +62,9 @@ header.header .header-main .customer-support-text .text {
 }
 .navbar-toggler{
     display: none;
+}
+.navbar-nav {
+    flex-direction: unset;
 }
 .header-menu{
 
