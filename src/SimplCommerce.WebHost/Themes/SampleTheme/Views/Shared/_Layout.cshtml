@@ -27,15 +27,14 @@
 <body>
     <div class="top-bar">
         <div class="container">
-            <div class="row">
-                <div class="top-link clearfix hidden-sm hidden-xs">
+            <div class="row top-link">                
                     <div class="col-log-7 col-md-7 top_nav">
                         <ul class="nav navbar-nav navbar-right">
-			                <li><a class="page-scroll" href="#">Trang chủ</a></li>
-                            <li><a class="page-scroll" href="#">Bảng giá bán</a></li>
-                            <li><a class="page-scroll" href="#">Chế độ bảo hành</a></li>
-                            <li><a class="page-scroll" href="#">Hình thức thanh toán</a></li>
-                            <li><a class="page-scroll" href="#">Liên hệ</a></li>                            
+			                <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Bảng giá bán</a></li>
+                            <li><a href="#">Chế độ bảo hành</a></li>
+                            <li><a href="#">Hình thức thanh toán</a></li>
+                            <li><a href="#">Liên hệ</a></li>                            
                         </ul>
                     </div>
                     <div class="col-log-5 col-md-5 col-xs-12 right">
@@ -44,8 +43,9 @@
                             <partial name="_LoginPartial" />
                         </ul>
                     </div>
-                </div>
-                <div class="header-main clearfix">
+            </div>
+            <div class="row">   
+                
 				    <div class="logo col-lg-3 col-md-3">
                         <a asp-area="Core" asp-controller="Home" asp-action="Index">
                             <img alt="SimplCommerce" src="~/themes/SampleTheme/Logo_fusun.png" alt="Fusun">
@@ -56,7 +56,7 @@
 						<img src="~/themes/SampleTheme/hotline_image.svg" alt="Hotline">
 						<div class="text"><span>Hotline</span><a href="tel:0933392977">0933 39 29 77</a></div>
 					</div>
-                </div>
+                
             </div>            
         </div>
     </div>  

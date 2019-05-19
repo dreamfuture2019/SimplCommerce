@@ -1,15 +1,57 @@
-﻿.page-header {
-    color: coral;
+﻿.top-bar {
+    background-color: #eb3e32 !important;
+    color: #ecebeb !important;
 }
+.top-link {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.17);
+    padding: 5px 0;
+}
+.top-link ul li a{
+    color: #fff;
+}
+.customer-support-text {
+    float: right;
+    position: relative;
+    margin-top: 15px;
+}
+.customer-support-text img {
+    max-width: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+header.header .header-main .customer-support-text .text {
+    text-align: left;
+    line-height: 1.1;
+    padding-left: 50px;
+}
+.customer-support-text .text span {
+    color: #fff;
+    display: block;
+}
+.customer-support-text .text a {
+    color: #ffdd20;
+    font-weight: 600;
+    font-size: 18px;
+}
+.navbar-toggler{
+    display: none;
+}
+.header-menu{
 
-.main-nav .dropdown-menu {
-    border-top: solid 2px coral;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 55px;
+    background: #393a44;
 }
-
-.main-nav .dropdown-menu .active > a, .main-nav .dropdown-menu li > a:hover, .main-nav .dropdown-menu li.dropdown-submenu:hover > a {
-    background-color:coral;
-}
-.tabbable-panel-line {
-    border: 1px solid #eee;
-    padding: 10px;
+.category-title {
+    padding: 0px 20px;
+    position: relative;
+    height: 55px;
+    line-height: 55px;
+    background: #ffba00;
+    color: #fff;
 }
