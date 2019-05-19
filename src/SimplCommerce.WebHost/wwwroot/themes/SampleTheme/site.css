@@ -64,7 +64,7 @@ header.header .header-main .customer-support-text .text {
     display: none;
 }
 .navbar{
-    background-color: #393a44 !important;
+    background-color: #dc3327 !important;
 }
 .main-nav {
     
@@ -83,7 +83,7 @@ header.header .header-main .customer-support-text .text {
 }
 .header-menu{
     display: block;    
-    background: #393a44;
+    background: #dc3327;
 }
 .btco-hover-menu .collapse ul > li:hover > a {
     background: #ffd800;
@@ -141,6 +141,56 @@ header.header .header-main .customer-support-text .text {
 .login-reg ul li ul.lang-selector li a {
     color: #393a44;
 }
+/* ------------------------------body-content----------------------------- */
+.body-content h2{
+    margin: 25px 0 10px;
+}
+.card-body{
+    padding: 10px;
+}
+.card-body .product-name{
+    font-size: 17px;
+    height: 45px;
+    overflow: hidden;
+}
+.product-list .card { 
+    height: 400px !important;
+    border: dashed 1px #ebebeb;
+}
+.card-body .product-price{
+    margin: 0;
+    padding: 10px 0 0;
+    border-top: dashed 1px #ebebeb;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.card-body .product-price:before{
+    content: "";
+    width: 10px;
+    height: 18px;
+    background: #ffffff;
+    position: absolute;
+    top: -9px;
+    left: -2px;
+    border-radius: 0 18px 18px 0;
+    border-top: solid #ececec 2px;
+    border-right: solid #ececec 1px;
+}
+.card-body .product-price:after{
+    content: "";
+    width: 10px;
+    height: 18px;
+    background: #ffffff;
+    position: absolute;
+    top: -9px;
+    right: -2px;
+    bottom: auto;
+    border-radius: 18px 0 0 18px;
+    border-top: solid #ececec 2px;
+    border-left: solid #ececec 1px;
+}
+
 /* ------------------------------section_policy----------------------------- */
 .section_policy_content img{
     max-width: 40px;
@@ -168,7 +218,8 @@ header.header .header-main .customer-support-text .text {
 
 /* ------------------------------Footer----------------------------- */
 .footer-content {
-    background-color: #393a44 !important;    
+    background-color: #393a44 !important; 
+    border-top: 5px solid red;   
 }
 .footer-content .row {
     padding-top: 10px;
