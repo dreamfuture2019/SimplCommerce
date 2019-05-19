@@ -65,26 +65,35 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-xs-12 col-sm-12 navigator---header category">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>					
-					<div class="category-nav-index collapse navbar-collapse" id="navbarMain">
-						@await Component.InvokeAsync("CategoryMenu")
+                    <div class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu main-nav">
+                        <div class="container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarMain">
+                                @await Component.InvokeAsync("CategoryMenu")
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-xs-12 col-sm-12 ">
-                    <div class="col-10 col-md-5 col-lg-7 search-box">
-                        @await Component.InvokeAsync("SearchForm")
-                    </div>
-                    <div class="col-md-2 cart-btn">
-                        @await Component.InvokeAsync("CartBadge")
+                </div>                
+                
+                <div class="col-md-6 col-xs-12 col-sm-12 ">
+                    <div class="row">
+                        <div class="col-md-10 search-box">
+                            @await Component.InvokeAsync("SearchForm")
+                        </div>
+                        <div class="col-md-2 cart-btn">
+                            @await Component.InvokeAsync("CartBadge")
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>    
-    <div class="container body-content">
-        @RenderBody()
+    <div class="body-content">
+        <div class="container">
+           @RenderBody()
+        </div>
     </div>
     <div class="footer-content">
             <div class="container">
