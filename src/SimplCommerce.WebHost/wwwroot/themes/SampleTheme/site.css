@@ -1,4 +1,5 @@
-﻿.top-bar {
+﻿a {text-decoration: none;}
+.top-bar {
     background-color: #eb3e32 !important;
     color: #fff !important;
 }
@@ -213,6 +214,9 @@ header.header .header-main .customer-support-text .text {
 .login-reg ul li ul.lang-selector li a {
     color: #393a44;
 }
+.carousel-indicators {
+    display: none;
+}
 /* ------------------------------body-content----------------------------- */
 .body-content h2{
     margin: 25px 0 10px;
@@ -307,26 +311,45 @@ header.header .header-main .customer-support-text .text {
     box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.56);
     
 }
-
+.breadcrumb{
+    overflow: hidden;
+    margin: 0;
+    background: #fff;
+    line-height: 32px;
+    padding-top: 5px;
+}
+.product-list-filters h3 {
+    font-size: 24px;
+}
+#productFilter h5.mb-0 a{
+    font-weight: 400;
+    text-decoration: none;
+}
+.product-list-filters h3 {
+    margin-top: 22px !important;
+}
+.body-content .category-result{
+    margin: 5px 20px 0 10px;
+}
 /* ------------------------------product-detail----------------------------- */
+
 .product-detail .product-name h1{
     font-size: 24px;
     line-height: 40px;
 }
-.product-detail .product-name h3{
+.product-detail h3{
     line-height: 1.3em;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px dashed #c5c5c5;
 }
-.body-content h2.page-header{
+.body-content h2{
     line-height: 1.3em;
     font-size: 20px;
     margin-bottom: 10px;
     padding-bottom: 5px;
-    border-bottom: 1px dashed #c5c5c5;
-    text-align: center;
+    border-bottom: 1px dashed #c5c5c5;    
     text-transform: uppercase;
 }
 
@@ -346,7 +369,7 @@ header.header .header-main .customer-support-text .text {
     font-size: 17px;
     font-weight: 500;
     margin: 0;
-    color: #eb3e32;
+    color: #333;
 }
 .section_policy_title{
     font-size: 14px;
