@@ -86,7 +86,7 @@ header.header .header-main .customer-support-text .text {
     background: #dc3327;
 }
 /* -------------css-dropmenu----------------------- */
-.btco-hover-menu .collapse ul > li:hover > a {
+.btco-hover-menu .collapse ul > li.nav-item:hover > a.nav-link {
     background: #c72d22;
     color: #fff !important;
 }
@@ -144,9 +144,9 @@ header.header .header-main .customer-support-text .text {
 .btco-hover-menu .collapse ul li.nav-item:hover ul.dropdown-menu li ul.dropdown-menu{
     display: none;
 }
-.btco-hover-menu .collapse ul li.nav-item ul.dropdown-menu li:hover ul.dropdown-menu{
+/* .btco-hover-menu .collapse ul li.nav-item ul.dropdown-menu li:hover ul.dropdown-menu{
     display: block;
-}
+} */
 .btco-hover-menu .collapse ul ul.dropdown-menu li a{
     font-weight: 400;
     font-size: 14px;
@@ -161,8 +161,12 @@ header.header .header-main .customer-support-text .text {
 .btco-hover-menu .collapse ul ul.dropdown-menu li:hover a{
     color: #ff2d37;
 }
-
-
+.btco-hover-menu .collapse ul ul.dropdown-menu li.show ul.show li a{
+    color: #252525;
+}
+.btco-hover-menu .collapse ul ul.dropdown-menu li.show ul.show li:hover a{
+    color: #ff2d37;
+}
 .category-title {
     padding: 0px 20px;
     position: relative;
