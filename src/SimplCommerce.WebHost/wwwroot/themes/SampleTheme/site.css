@@ -89,7 +89,7 @@ header.header .header-main .customer-support-text .text {
     background: #ffd800;
 }
 /* -------------css-dropmenu----------------------- */
-.btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu {
+.btco-hover-menu .collapse ul ul.dropdown-menu {
     overflow: hidden;
     display: block;
     max-height: 0px;
@@ -120,7 +120,7 @@ header.header .header-main .customer-support-text .text {
     -o-transform-origin: 0% 0%;
     transform-origin: 0% 0%;
 }
-.btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu:hover {
+.btco-hover-menu .collapse ul ul.dropdown-menu:hover {
     overflow: visible;
     max-height: 3000px;
     max-width: 3000px;
@@ -134,7 +134,7 @@ header.header .header-main .customer-support-text .text {
     -o-transition: -o-transform 0.5s ease, opacity 0.2s ease, max-height 0s step-end, max-width 0s step-end, padding 0s step-end;
     transition: transform 0.5s ease, opacity 0.2s ease, max-height 0s step-end, max-width 0s step-end, padding 0s step-end;
 }
-.btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu li a{
+.btco-hover-menu .collapse ul ul.dropdown-menu li a{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -145,7 +145,7 @@ header.header .header-main .customer-support-text .text {
     border-bottom: solid 1px #e5e6ec;
     text-align: left;
 }
-.btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu li a{
+.btco-hover-menu .collapse ul ul.dropdown-menu li a{
     color: #ff2d37;
 }
 .btco-hover-menu .collapse ul ul > li:hover > a, .navbar .show .dropdown-menu > li > a:focus, .navbar .show .dropdown-menu > li > a:hover {
