@@ -232,7 +232,7 @@ header.header .header-main .customer-support-text .text {
     color: #444;
 }
 .product-list .card { 
-    height: 400px !important;
+    height: 400px ;
     border: dashed 1px #ebebeb;
 }
 .card-body .product-price{

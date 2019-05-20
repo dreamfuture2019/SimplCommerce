@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1366px){
+
+}/* -------------------------end-1366px-------------------------- */
+
+@media only screen and (max-width: 768px){
+
+}/* -------------------------end-768px-------------------------- */
+
+@media only screen and (max-width: 480px){
+.top-bar .top_nav, .customer-support-text {
+    display: none;
+}
+.header-menu {    
+    background: none !important;
+}
+.search-box {
+    width: 85% !important;
+}
+.cart-btn{
+    width: 15% !important;
+}
+.search-box .form-inline .search-input{
+    margin-bottom: 0; 
+    margin-left: 65px;
+}
+.search-input .form-control {
+    width: 190px !important; 
+}
+
+
+
+}/* -------------------------end-480px-------------------------- */

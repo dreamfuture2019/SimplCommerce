@@ -15,6 +15,7 @@
     <link simpl-append-version="true" rel="stylesheet" href="~/lib/toastr/build/toastr.min.css" />
     <link simpl-append-version="true" rel="stylesheet" href="~/modules/core/site.css" />
     <link simpl-append-version="true" rel="stylesheet" href="~/themes/SampleTheme/site.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/themes/SampleTheme/responsive_site.css" />
     <link simpl-append-version="true" rel="stylesheet" href="~/lib/smoothproducts/css/smoothproducts.css" />
     <link simpl-append-version="true" rel="stylesheet" href="~/modules/catalog/product-detail.css" />
     <script simpl-append-version="true" src="~/lib/angular/angular.js"></script>
@@ -62,14 +63,15 @@
     </div>  
     
     <div class=" header-menu fw hidden-sm hidden-xs">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-xs-12 col-sm-12 navigator---header category">
                     <div class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu main-nav">
                         <div class="container">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                            
                             <div class="collapse navbar-collapse" id="navbarMain">
                                 @await Component.InvokeAsync("CategoryMenu")
                             </div>
