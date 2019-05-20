@@ -224,6 +224,8 @@ header.header .header-main .customer-support-text .text {
     font-size: 17px;
     height: 45px;
     overflow: hidden;
+    text-align: center;
+    color: #444;
 }
 .product-list .card { 
     height: 400px !important;
@@ -236,8 +238,10 @@ header.header .header-main .customer-support-text .text {
     border-left: none;
     border-right: none;
     border-bottom: none;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
+    color: #ff4300 !important;
+    font-weight: bold;
 }
 
 .card-body .product-price-regular{
@@ -304,8 +308,27 @@ header.header .header-main .customer-support-text .text {
     
 }
 
-
-
+/* ------------------------------product-detail----------------------------- */
+.product-detail .product-name h1{
+    font-size: 24px;
+    line-height: 40px;
+}
+.product-detail .product-name h3{
+    line-height: 1.3em;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #c5c5c5;
+}
+.body-content h2.page-header{
+    line-height: 1.3em;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #c5c5c5;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 
 
