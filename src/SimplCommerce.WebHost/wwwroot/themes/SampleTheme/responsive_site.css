@@ -70,11 +70,17 @@
 }/* -------------------------end-min-width:768px-------------------------- */
 
 @media only screen and (max-width: 768px){
-
+    .customer-support-text{
+        display: none;
+    }
 }/* -------------------------end-768px-------------------------- */
 
+@media only screen and (max-width: 576px){
+
+}/* -------------------------end-576px-------------------------- */
+
 @media only screen and (max-width: 480px){
-    .customer-support-text, .company_info h2 {
+    .company_info h2 {
         display: none;
     }
     .search-box {
@@ -92,9 +98,7 @@
     }
 
 
-@media only screen and (max-width: 576px){
 
-}/* -------------------------end-576px-------------------------- */
 
 }/* -------------------------end-480px-------------------------- */
 

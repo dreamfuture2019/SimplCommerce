@@ -52,6 +52,12 @@ header.header .header-main .customer-support-text .text {
     line-height: 1.1;
     padding-left: 50px;
 }
+.nav-search-cart {
+    display: flow-root;
+}
+.search-cart {
+    float: right;
+}
 .customer-support-text .text span {
     color: #fff;
     display: block;
