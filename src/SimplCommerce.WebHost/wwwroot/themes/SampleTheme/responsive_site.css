@@ -2,6 +2,12 @@
 
 }/* -------------------------end-1366px-------------------------- */
 
+@media only screen and (min-width: 768px){
+.navbar-toggler{
+    display: none;
+}
+}/* -------------------------end-min-width:768px-------------------------- */
+
 @media only screen and (max-width: 768px){
 
 }/* -------------------------end-768px-------------------------- */
