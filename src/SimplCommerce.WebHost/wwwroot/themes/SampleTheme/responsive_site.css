@@ -1,6 +1,17 @@
 @media only screen and (max-width: 1366px){
 
 }/* -------------------------end-1366px-------------------------- */
+@media only screen and (min-width: 1200px){
+    .search-input .form-control{
+        width: 60% ;
+    }
+    .form-inline .search-category{
+        width: 25%;
+    }
+    .form-inline .search-category .form-control{
+        width: 100%;
+    }
+
 @media only screen and (max-width: 1200px) and (min-width: 993px){
     .search-box .form-inline .search-category .form-control{
         width: 90px;
@@ -83,7 +94,7 @@
         width: 56% !important;
     }
     .search-input .form-control{
-        width: 100% !important;
+        width: 100% ;
     }
     .search-btn{
         width: 15% !important;
