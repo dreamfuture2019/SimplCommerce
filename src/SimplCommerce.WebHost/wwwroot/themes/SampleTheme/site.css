@@ -7,9 +7,9 @@
     justify-content: flex-end;
     border-bottom: 1px solid rgba(255,255,255,0.17);    
 }
-/* .top-nav, .login-reg{
-    padding-right: 0px;
-} */
+.login-reg{
+    padding-right: 5px;
+}
 .top-link ul li a{
     color: #fff;
     float: left;
@@ -35,8 +35,7 @@
 .customer-support-text {    
     position: relative;
     margin-top: 15px;
-    width: 20%;
-    margin-right: -15px;
+    width: 20%;    
 }
 .customer-support-text .text{
     float: right;
@@ -207,10 +206,7 @@ header.header .header-main .customer-support-text .text {
     margin-left: 3px;
 }
 .cart-btn .cart-badge {
-    position: relative;
     top: 9px;
-    right: 0px;
-    padding-top: 8px;
     padding-right: 0;
 }   
 .cart-btn .cart-badge a{
