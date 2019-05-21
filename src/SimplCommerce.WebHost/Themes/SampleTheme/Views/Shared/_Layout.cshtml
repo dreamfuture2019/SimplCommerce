@@ -63,9 +63,7 @@
     </div>  
     
     <div class=" header-menu fw hidden-sm hidden-xs">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
-                            </button>
+                            
 		<div class="container">
 			<div class="row nav-search-cart">
                 <div class="col-md-6 col-sm-10 search-cart">
@@ -81,7 +79,9 @@
 				<div class="col-md-6 col-xs-12 col-sm-12 navigator---header category">
                     <div class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu main-nav">
                         <div class="container">
-                            
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            </button>                            
                             <div class="collapse navbar-collapse" id="navbarMain">
                                 @await Component.InvokeAsync("CategoryMenu")
                             </div>

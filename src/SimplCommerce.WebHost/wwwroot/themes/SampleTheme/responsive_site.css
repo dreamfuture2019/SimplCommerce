@@ -76,6 +76,23 @@
 }/* -------------------------end-768px-------------------------- */
 
 @media only screen and (max-width: 576px){
+    .search-box{
+        margin-left: 15px;
+    }
+    .search-box .form-inline .search-input{
+        width: 56% !important;
+    }
+    .search-input .form-control{
+        width: 100% !important;
+    }
+    .search-btn{
+        width: 15% !important;
+    }
+
+
+
+
+
 
 }/* -------------------------end-576px-------------------------- */
 
@@ -93,9 +110,7 @@
         margin-bottom: 0; 
         margin-left: 65px;
     }
-    .search-input .form-control {
-        width: 190px !important; 
-    }
+    
 
 
 
