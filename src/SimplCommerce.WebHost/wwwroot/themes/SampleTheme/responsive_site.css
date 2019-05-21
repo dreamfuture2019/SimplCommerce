@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1366px){
 
 }/* -------------------------end-1366px-------------------------- */
-@media only screen and (min-width: 993px){
+@media screen and (min-width: 993px){
     .form-inline .search-input{
         width: 65% ;
     }
