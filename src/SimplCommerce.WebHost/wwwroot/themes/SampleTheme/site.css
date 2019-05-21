@@ -4,7 +4,7 @@
     color: #fff !important;
 }
 .top-link {
-
+    justify-content: flex-end;
     border-bottom: 1px solid rgba(255,255,255,0.17);    
 }
 /* .top-nav, .login-reg{
@@ -36,6 +36,7 @@
     position: relative;
     margin-top: 15px;
     width: 20%;
+    margin-right: -15px;
 }
 .customer-support-text .text{
     float: right;
@@ -77,7 +78,7 @@ header.header .header-main .customer-support-text .text {
     margin: 0;
 }
 .top_nav .navbar-nav {
-    display: inline;
+    flex-direction: row;
 }
 .navbar-light .navbar-nav .nav-link {
     color: rgb(255, 255, 255);

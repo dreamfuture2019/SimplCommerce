@@ -1,11 +1,27 @@
 @media only screen and (max-width: 1366px){
 
 }/* -------------------------end-1366px-------------------------- */
-
-@media only screen and (min-width: 768px){
-.navbar-toggler{
-    display: none;
+@media only screen and (max-width: 1200px) and (min-width: 993px){
+    
 }
+@media only screen and (max-width: 992px){
+    .top-bar .top_nav {
+        display: none;
+    }
+
+}/* -------------------------end-992px-------------------------- */
+@media only screen and (max-width: 992px) and (min-width: 769px){
+    .logo {
+        display: none;
+    }
+    .company_info{
+        margin: 10px 0;
+    }
+}
+@media only screen and (min-width: 768px){
+    .navbar-toggler{
+        display: none;
+    }
 }/* -------------------------end-min-width:768px-------------------------- */
 
 @media only screen and (max-width: 768px){
@@ -13,23 +29,27 @@
 }/* -------------------------end-768px-------------------------- */
 
 @media only screen and (max-width: 480px){
-.top-bar .top_nav, .customer-support-text, .company_info h2 {
-    display: none;
-}
-.search-box {
-    width: 85% !important;
-}
-.cart-btn{
-    width: 15% !important;
-}
-.search-box .form-inline .search-input{
-    margin-bottom: 0; 
-    margin-left: 65px;
-}
-.search-input .form-control {
-    width: 190px !important; 
-}
+    .customer-support-text, .company_info h2 {
+        display: none;
+    }
+    .search-box {
+        width: 85% !important;
+    }
+    .cart-btn{
+        width: 15% !important;
+    }
+    .search-box .form-inline .search-input{
+        margin-bottom: 0; 
+        margin-left: 65px;
+    }
+    .search-input .form-control {
+        width: 190px !important; 
+    }
 
+
+@media only screen and (max-width: 576px){
+
+}/* -------------------------end-576px-------------------------- */
 
 }/* -------------------------end-480px-------------------------- */
 

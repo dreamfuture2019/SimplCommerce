@@ -29,7 +29,7 @@
     <div class="top-bar">
         <div class="container">
             <div class="row top-link">                
-                <div class="col-md-7 top_nav">
+                <div class="col top_nav">
                     <ul class="nav navbar-nav navbar-right">
 			            <li><a href="#">Trang chủ</a></li>
                         <li><a href="#">Bảng giá bán</a></li>
@@ -38,7 +38,7 @@
                         <li><a href="#">Liên hệ</a></li>                            
                     </ul>
                 </div>
-                <div class="col-md-5 col-xs-12 right login-reg">                        
+                <div class="right login-reg">                        
                     <ul class="header links nav justify-content-end">
                         <partial name="_SelectLanguagePartial" />
                         <partial name="_LoginPartial" />
@@ -46,15 +46,15 @@
                 </div>
             </div>
             <div class="row">
-			    <div class="logo col-md-3">
+			    <div class="logo col-lg-3 col-md-3 ">
                     <a asp-area="Core" asp-controller="Home" asp-action="Index">
                         <img src="~/themes/SampleTheme/LOGO-FUSUN.svg" alt="Fusun" title="Công ty TNHH Fusun">
                     </a>
                 </div>
-                <div class="col-md-6 company_info">
+                <div class="col-lg-6 col-md-9 company_info">
                     <h2>Công ty TNHH Fusun</h2>
                     <p>Chuyên cung cấp, sửa chữa máy tính, thiết bị điện tử, camera, máy chiếu</p></div>                    
-                <div class="col-md-3 customer-support-text clearfix">
+                <div class="col customer-support-text clearfix">
 					<img src="~/themes/SampleTheme/hotline_image.svg" alt="Hotline">
 					<div class="text"><span>Hotline</span><a href="tel:0933392977">0933 39 29 77</a></div>
 				</div>
