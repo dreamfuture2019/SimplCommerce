@@ -11,7 +11,7 @@
     .form-inline .search-category .form-control{
         width: 100%;
     }
-
+}
 @media only screen and (max-width: 1200px) and (min-width: 993px){
     .search-box .form-inline .search-category .form-control{
         width: 90px;
