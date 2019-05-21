@@ -7,11 +7,8 @@
 }/* -------------------------end-768px-------------------------- */
 
 @media only screen and (max-width: 480px){
-.top-bar .top_nav, .customer-support-text {
+.top-bar .top_nav, .customer-support-text, .company_info h2 {
     display: none;
-}
-.header-menu {    
-    background: none !important;
 }
 .search-box {
     width: 85% !important;
@@ -26,7 +23,6 @@
 .search-input .form-control {
     width: 190px !important; 
 }
-
 
 
 }/* -------------------------end-480px-------------------------- */
