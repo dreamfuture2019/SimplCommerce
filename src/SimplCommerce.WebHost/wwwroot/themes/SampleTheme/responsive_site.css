@@ -89,7 +89,9 @@
     .search-btn{
         width: 15% !important;
     }
-
+    .cart-btn .cart-badge {        
+        margin-left: 0;
+    }
 
 
 
