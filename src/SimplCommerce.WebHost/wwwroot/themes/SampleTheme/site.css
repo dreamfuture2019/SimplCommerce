@@ -218,7 +218,7 @@ header.header .header-main .customer-support-text .text {
     position: relative;
     border: 0 none;
     background: #ffd800;
-    width: 12px;
+    width: 12%;
     float: left;
     text-align: center;
     height: 38px;
@@ -229,7 +229,7 @@ header.header .header-main .customer-support-text .text {
 .cart-btn .cart-badge {
     top: 9px;
     position: absolute;
-    right: auto;
+    
     
 }  
 .cart-btn .cart-badge a{
