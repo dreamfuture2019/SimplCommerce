@@ -62,7 +62,7 @@ header.header .header-main .customer-support-text .text {
     font-size: 18px;
 }
 .navbar-toggler{
-    display: none;
+    margin-left: 5px;
 }
 .navbar{
     background-color: #dc3327 !important;
@@ -167,6 +167,10 @@ header.header .header-main .customer-support-text .text {
 }
 .btco-hover-menu .collapse ul ul.dropdown-menu li.show ul.show li:hover a{
     color: #ff2d37;
+}
+.navbar-toggler-icon .fa-bars{
+    font-size: 30px;
+    color: #fff;
 }
 .category-title {
     padding: 0px 20px;

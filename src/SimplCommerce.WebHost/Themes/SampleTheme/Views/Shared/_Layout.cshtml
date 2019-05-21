@@ -79,13 +79,15 @@
                 
                 <div class="col-md-6 col-xs-12 col-sm-12 ">
                     <div class="row">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
-                        </button>
-                        <div class="col-md-10 search-box">
+                        <div class="col">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            </button>
+                        </div>
+                        <div class="col-7 col-md-10 search-box">
                             @await Component.InvokeAsync("SearchForm")
                         </div>
-                        <div class="col-md-2 cart-btn">
+                        <div class="col cart-btn">
                             @await Component.InvokeAsync("CartBadge")
                         </div>
                     </div>
