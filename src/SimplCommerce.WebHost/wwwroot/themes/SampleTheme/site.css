@@ -438,3 +438,12 @@ header.header .header-main .customer-support-text .text {
 .footer-content ul.info li .fa-envelope-o{
     padding-right: 2px;
 }
+.bottom-footer{
+    background: #d6d6d6;
+}
+.bottom-footer .Owner{
+    float: left;
+}
+.bottom-footer .designer{
+    float: right;
+}
