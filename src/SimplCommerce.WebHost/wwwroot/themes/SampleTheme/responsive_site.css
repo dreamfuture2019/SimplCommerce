@@ -74,11 +74,20 @@
     .customer-support-text{
         display: none;
     }
+    .company_info {
+        margin-bottom: 10px;
+    }
+    .product-list .card {
+        height: auto;
+    }
 }/* -------------------------end-768px-------------------------- */
 
 @media only screen and (max-width: 576px){
     .search-box{
-        margin-left: 15px;
+        left: 80px;
+    }
+    .form-inline .search-input{
+        margin-bottom:0; 
     }
     .search-box .form-inline .search-input{
         width: 56% !important;
@@ -114,7 +123,7 @@
         margin-left: 65px;
     }
     
-
+    
 
 
 
