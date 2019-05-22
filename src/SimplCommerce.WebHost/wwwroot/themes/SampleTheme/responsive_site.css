@@ -81,7 +81,11 @@
         height: auto;
     }
 }/* -------------------------end-768px-------------------------- */
-
+@media only screen and (max-width: 768px) and (min-width: 577px){
+    .product-list .card {
+        width: 50%;
+    }
+}
 @media only screen and (max-width: 576px){
     .search-box{
         left: 80px;
