@@ -439,11 +439,9 @@ header.header .header-main .customer-support-text .text {
     padding-right: 2px;
 }
 .bottom-footer{
-    background: #d6d6d6;
-}
-.bottom-footer .Owner{
-    float: left;
-}
-.bottom-footer .designer{
-    float: right;
+    border-top: dashed thin #46464e;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 15px;
 }
