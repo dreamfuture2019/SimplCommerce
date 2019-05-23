@@ -21,6 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Themes\SampleTheme\Areas\Catalog\Views\Product\ProductDetail.cshtml" />
+    <None Remove="Themes\SampleTheme\Areas\Catalog\Views\Product\ProductOverview.cshtml" />
     <None Remove="Themes\SampleTheme\Areas\Catalog\Views\Shared\Components\ProductWidget\Default.cshtml" />
   </ItemGroup>
 
@@ -74,10 +76,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.1" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.5.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Themes\SampleTheme\Areas\Catalog\Views\Product\" />
   </ItemGroup>
 
   <Target Name="CopyModule" AfterTargets="Build">
