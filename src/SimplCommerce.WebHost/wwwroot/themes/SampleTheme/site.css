@@ -366,18 +366,18 @@ header.header .header-main .customer-support-text .text {
 /* ------------------------------product-detail----------------------------- */
 
 .product-detail .product-name h1{
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 40px;
 }
 .product-detail h3{
-    line-height: 1.3em;
+    line-height: 1.5em;
     font-size: 24px;
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px dashed #c5c5c5;
 }
 .body-content h2{
-    line-height: 1.3em;
+    line-height: 1.5em;
     font-size: 20px;
     margin-bottom: 10px;
     padding-bottom: 5px;
@@ -414,13 +414,17 @@ header.header .header-main .customer-support-text .text {
 
 
 /* ------------------------------Footer----------------------------- */
+
 .footer-content {
     background-color: #393a44 !important; 
     border-top: 5px solid red;   
+    margin-top: 15px !important;
 }
+
 .footer-content .row {
     padding-top: 10px;
 }
+
 .footer-content h4{
     color: #fff;
 }
