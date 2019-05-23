@@ -255,8 +255,16 @@ header.header .header-main .customer-support-text .text {
     text-align: center;
     color: #444;
 }
+.product-list{
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+}
+.product-list .prd-item{
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .product-list .card { 
-    height: 400px ;
+    height: auto ;
     border: dashed 1px #ebebeb;
 }
 .card-body .product-price{
