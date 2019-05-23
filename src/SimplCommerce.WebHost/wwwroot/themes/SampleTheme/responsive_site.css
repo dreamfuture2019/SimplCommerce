@@ -10,7 +10,10 @@
         max-width: 20% ;
         flex: 0 0 20%;
     }
-    
+    .page-group-prd .product-list .prd-item {
+        max-width: 25% !important;
+        flex: 0 0 25% !important;
+    }
 }
 @media only screen and (max-width: 1200px) and (min-width: 993px){
     
@@ -21,6 +24,10 @@
     }
     .card-body .product-price:after, .card-body .product-price:before{
         top: 203px;
+    }
+    .page-group-prd .product-list .prd-item {
+        max-width: 33.333333% !important;
+        flex: 0 0 33.333333% !important;
     }
 }/* -------------------------end-992px-------------------------- */
 @media only screen and (max-width: 992px) and (min-width: 769px){
@@ -123,6 +130,10 @@
     .section_policy_content{
         padding-top:5px;
         padding-bottom:5px;
+    }
+    .page-group-prd .product-list .prd-item {
+        max-width: 50% !important;
+        flex: 0 0 50% !important;
     }
    
 

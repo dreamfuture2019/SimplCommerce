@@ -245,7 +245,7 @@
     <div class="row product-list">
         @foreach (var product in Model.RelatedProducts)
         {
-            <div class="col-xs-6 col-md-3">
+            <div class="col-sm-6 col-md-2 prd-item">
                 <partial name="_ProductThumbnail" model="product" />
             </div>
         }
@@ -254,14 +254,16 @@
 
 @if (Model.CrossSellProducts.Any())
 {
-    <h2 class="page-header">Cross-sell Products</h2>
-    <div class="row product-list">
-        @foreach (var product in Model.CrossSellProducts)
-        {
-            <div class="col-xs-6 col-md-3">
-                <partial name="_ProductThumbnail" model="product" />
-            </div>
-        }
+    <div class="cross-sell-list">
+        <h2 class="page-header">Cross-sell Products</h2>
+        <div class="row product-list">
+            @foreach (var product in Model.CrossSellProducts)
+            {
+                <div class="col-sm-6 col-md-2 prd-item">
+                    <partial name="_ProductThumbnail" model="product" />
+                </div>
+            }
+        </div>
     </div>
 }
 
