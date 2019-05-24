@@ -136,7 +136,7 @@
         padding-top:5px;
         padding-bottom:5px;
     }
-    .product-list .prd-item {
+    .product-list .prd-item, .page-group-prd .product-list .prd-item {
         max-width: 50% !important;
         flex: 0 0 50% !important;
     }

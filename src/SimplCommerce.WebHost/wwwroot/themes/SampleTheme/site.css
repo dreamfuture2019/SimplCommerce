@@ -241,7 +241,7 @@ header.header .header-main .customer-support-text .text {
 .login-reg ul li ul.lang-selector li a {
     color: #393a44;
 }
-.carousel-indicators {
+.carousel-indicators, .add-to-lists {
     display: none;
 }
 /* ------------------------------body-content----------------------------- */
