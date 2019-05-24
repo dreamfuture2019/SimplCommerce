@@ -241,7 +241,7 @@ header.header .header-main .customer-support-text .text {
 .login-reg ul li ul.lang-selector li a {
     color: #393a44;
 }
-.carousel-indicators {
+.carousel-indicators, .add-to-lists {
     display: none;
 }
 /* ------------------------------body-content----------------------------- */
@@ -253,7 +253,7 @@ header.header .header-main .customer-support-text .text {
 }
 .card-body .product-name{
     font-size: 14px;
-    height: 5px;
+    height: 33px;
     overflow: hidden;
     text-align: center;
     color: #444;

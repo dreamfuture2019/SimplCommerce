@@ -124,7 +124,7 @@
                                     <button type="button" class="quantity-button" name="add" value="+">+</button>
                                 </div>
                                 <button type="button" disabled="@(!variant.IsAllowToOrder || (variant.StockTrackingIsEnabled && variant.StockQuantity <= 0))" class="btn btn-lg btn-add-cart">@Localizer["Add to cart"]</button>
-                                <div>
+                                <div style="display: none;">
                                     <ul class="list-inline add-to-lists">
                                         <li class="wishlist-in">
                                             <i class="fa fa-heart"></i>
@@ -269,12 +269,12 @@
 
 @await Component.InvokeAsync("ProductRecentlyViewed", new { productId = Model.Id })
 
-<div>
+<div style="display: none;">
     <h3>@Localizer["Customer reviews"]</h3>
     @await Component.InvokeAsync("Review", new { entityId = Model.Id, entityTypeId = "Product" })
 </div>
 <br />
-<div>
+<div style="display: none;">
     <h3>@Localizer["Customer comments"]</h3>
     @await Component.InvokeAsync("Comment", new { entityId = Model.Id, entityTypeId = "Product" })
 </div>
