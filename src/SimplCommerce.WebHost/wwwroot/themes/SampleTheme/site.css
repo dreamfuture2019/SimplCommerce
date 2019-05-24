@@ -127,11 +127,11 @@ header.header .header-main .customer-support-text .text {
     width: 200px;
     padding: 0;
     background-color: #fff;
-    box-shadow: 0px 10px 21.6px 2.4px rgba(0,0,0,0.06) !important;
-    -webkit-box-shadow: 0px 10px 21.6px 2.4px rgba(0,0,0,0.06);
-    -moz-box-shadow: 0px 10px 21.6px 2.4px rgba(0,0,0,0.06);
-    -o-box-shadow: 0px 10px 21.6px 2.4px rgba(0,0,0,0.06);
-    -os-box-shadow: 0px 10px 21.6px 2.4px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 10.6px 5.4px rgba(0,0,0,0.1) !important;
+    -webkit-box-shadow: 0px 0px 10.6px 5.4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 10.6px 5.4px rgba(0,0,0,0.1);
+    -o-box-shadow: 0px 0px 10.6px 5.4px rgba(0,0,0,0.1);
+    -os-box-shadow: 0px 0px 10.6px 5.4px rgba(0,0,0,0.1);
     -webkit-transform-origin: 0% 0%;
     -moz-transform-origin: 0% 0%;
     -ms-transform-origin: 0% 0%;
@@ -242,6 +242,9 @@ header.header .header-main .customer-support-text .text {
     display: none;
 }
 /* ------------------------------body-content----------------------------- */
+.page-group-prd .sort-by, .page-group-prd .sort-by .btn-group .form-control{
+    font-size: 14px;
+}
 .body-content h2{
     margin: 25px 0 10px;
 }
@@ -354,15 +357,25 @@ header.header .header-main .customer-support-text .text {
     line-height: 32px;
     padding-top: 5px;
 }
+.bread-crumb{
+    margin-top:5px;
+}
 .product-list-filters h3 {
-    font-size: 24px;
+    font-size: 20px;
+    margin-top: 26px !important;
 }
 #productFilter h5.mb-0 a{
     font-weight: 400;
     text-decoration: none;
 }
-.product-list-filters h3 {
-    margin-top: 22px !important;
+.card-header {
+    padding: 0.75rem 0.5rem;
+}
+.card-header h5{
+    font-size: 17px;
+}
+#accordion-brand ul{
+    padding-left: 0;
 }
 .body-content .category-result h2{
     margin: 5px 20px 0 10px;

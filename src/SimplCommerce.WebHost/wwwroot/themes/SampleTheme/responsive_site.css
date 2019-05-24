@@ -100,7 +100,12 @@
     .product-list .card {
         height: auto;
     }
-   
+    .btco-hover-menu .collapse ul ul.dropdown-menu {
+        display: none;
+    }
+    .btco-hover-menu .collapse ul ul.show {
+        display: block !important;
+    }
 }/* -------------------------end-768px-------------------------- */
 @media only screen and (max-width: 768px) and (min-width: 577px){
     .product-list .prd-item {
