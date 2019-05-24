@@ -131,11 +131,13 @@
         padding-top:5px;
         padding-bottom:5px;
     }
-    .page-group-prd .product-list .prd-item {
+    .product-list .prd-item {
         max-width: 50% !important;
         flex: 0 0 50% !important;
     }
-   
+    .breadcrumb {
+        display: none;
+    }
 
 
 

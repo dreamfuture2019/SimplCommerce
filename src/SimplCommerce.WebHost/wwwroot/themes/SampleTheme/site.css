@@ -250,7 +250,7 @@ header.header .header-main .customer-support-text .text {
 }
 .card-body .product-name{
     font-size: 14px;
-    height: 45px;
+    height: 32px;
     overflow: hidden;
     text-align: center;
     color: #444;
@@ -285,7 +285,9 @@ header.header .header-main .customer-support-text .text {
 .card-body .product-price-regular{
     padding: 0;
 }
-
+.card-title {
+    margin-bottom: 0.5rem !important;
+}
 /* .card-body .product-price:before{
     content: "";
     width: 10px;
