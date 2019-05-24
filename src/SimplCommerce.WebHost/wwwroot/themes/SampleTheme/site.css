@@ -279,7 +279,9 @@ header.header .header-main .customer-support-text .text {
     color: #ff4300 !important;
     font-weight: bold;
 }
-
+.product-price .product-price-regular {
+    font-size: 15px !important;
+}
 .card-body .product-price-regular{
     padding: 0;
 }
