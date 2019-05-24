@@ -143,16 +143,16 @@
     .breadcrumb {
         display: none;
     }
-
+    .company_info h2 {
+        display: none;
+    }
 
 
 
 }/* -------------------------end-576px-------------------------- */
 
 @media only screen and (max-width: 480px){
-    .company_info h2 {
-        display: none;
-    }
+    
     .search-box {
         width: 85% !important;
         left: 15px;
