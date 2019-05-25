@@ -488,7 +488,7 @@ header.header .header-main .customer-support-text .text {
     font-size: 20px;
     margin: 0;
 }
-.order-summary, .coupon-discount, .order-note-form, .cart-items, {
+.order-summary, .coupon-discount, .order-note-form, .cart-items, .add-ship, .all-order-content, .Bill-Address{
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
     background: #fff;
 }
