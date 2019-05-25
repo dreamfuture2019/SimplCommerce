@@ -3,7 +3,7 @@
 }
 
 <div class="row cart-list" ng-app="simpl.shoppingCart" ng-controller="shoppingCartListCtrl as vm" ng-cloak>
-    <div class="col-md-12 cart-title"><h1>Xác nhận - thanh toán</h1></div>
+    <div class="col-md-12"><div class="cart-title"><h1>Xác nhận - thanh toán</h1></div></div>
     <div class="col-lg-8 col-md-12 col-sm-12">
         <table class="table table-striped cart-items">
             <thead>
@@ -56,8 +56,10 @@
     </div>
     <div class="col-lg-4 col-md-12 col-sm-12">
         <div class="order-summary" ng-if="vm.cart.items.length">
-            <img src="/themes/SampleTheme/hotline_image.svg"
-            <h4>@Localizer["Order summary"]</h4>
+            <div class="title-order">
+                <img src="/themes/SampleTheme/mark.svg"
+                <h4>@Localizer["Order summary"]</h4>
+            </div>
             <table class="table">
                 <tr>
                     <td>@Localizer["Subtotal"]</td>
