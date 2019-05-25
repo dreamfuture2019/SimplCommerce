@@ -466,10 +466,10 @@ header.header .header-main .customer-support-text .text {
     font-size: 1rem;
 }
 .cart-list .product-image img {
-    width: 85px !important;
+    width: 90px !important;
 }
 .cart-items .ng-scope h4.ng-binding{
-    font-size: 1.2rem;
+    font-size: 15px;
 }
 }.cart-items .table th, .cart-items .table td {
     padding: 0.75rem 0.2rem !important;    
@@ -488,13 +488,14 @@ header.header .header-main .customer-support-text .text {
     font-size: 20px;
     margin: 0;
 }
-.order-summary, .coupon-discount{
+.order-summary, .coupon-discount, .order-note-form, .cart-items{
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
     background: #fff;
 }
 .title-order{
     background-image: linear-gradient(90deg,#ebf8ff,#fff);
     padding: 10px 10px 5px;
+    color: #348fe9;
 }
 .title-order img {
     height: 24px;
@@ -505,4 +506,17 @@ header.header .header-main .customer-support-text .text {
     font-size: 1.2rem;
     font-weight: 500;
 }
-
+.order-cart .btn-primary{
+    height: 48px;
+    border-radius: 3px;
+    background-color: #e5101d;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 20px;
+    border-color: #e5101d;
+}
+.coupon-form .form-inline{
+    margin: 10px 10px 0;
+    padding-bottom: 10px;
+}

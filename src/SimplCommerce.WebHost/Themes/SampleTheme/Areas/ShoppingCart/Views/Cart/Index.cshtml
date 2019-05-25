@@ -7,7 +7,7 @@
     <div class="col-lg-8 col-md-12 col-sm-12">
         <table class="table table-striped cart-items">
             <thead>
-                <tr>
+                <tr class="title-order">
                     <th colspan="2">@Localizer["Product"]</th>
                     <th class="text-right">@Localizer["Price"]</th>
                     <th class="text-center">@Localizer["Quantity"]</th>
@@ -27,13 +27,13 @@
                         <span ng-if="!cartItem.isProductAvailabeToOrder" class="badge badge-pill badge-danger">Not availabe any more</span>
                         <span ng-if="cartItem.productStockTrackingIsEnabled && cartItem.productStockQuantity < cartItem.quantity" class="badge badge-pill badge-danger">Not enough stock. Available {{cartItem.productStockQuantity}}</span>
                     </td>
-                    <td class="text-right">{{cartItem.productPriceString}}</td>
-                    <td class="text-center">
-                        <button type="button" class="quantity-button" ng-click="vm.decreaseQuantity(cartItem)" name="subtract" value="-">-</button>
-                        <input type="text" class="quantity-field" ng-model="cartItem.quantity" readonly="readonly" />
+                    <td class="text-right" style="width: 135px;">{{cartItem.productPriceString}}</td>
+                    <td class="text-center" style="width: 80px;">
                         <button type="button" class="quantity-button" ng-click="vm.increaseQuantity(cartItem)" name="subtract" value="+">+</button>
+                        <input type="text" class="quantity-field" ng-model="cartItem.quantity" readonly="readonly" />
+                        <button type="button" class="quantity-button" ng-click="vm.decreaseQuantity(cartItem)" name="subtract" value="-">-</button>                        
                     </td>
-                    <td class="text-right"><button class="btn btn-link" ng-click="vm.removeShoppingCartItem(cartItem)" style="padding-top: 0.1rem;"><span class="fa fa-remove" aria-hidden="true"></span></button></td>
+                    <td class="text-right"><button class="btn btn-link" ng-click="vm.removeShoppingCartItem(cartItem)" style="padding-top: 2rem;"><span class="fa fa-remove" aria-hidden="true"></span></button></td>
                 </tr>
                 <tr ng-if="!vm.cart.items.length">
                     <td colspan="5" class="text-center">
