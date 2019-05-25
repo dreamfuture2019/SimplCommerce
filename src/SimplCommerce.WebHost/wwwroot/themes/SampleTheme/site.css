@@ -469,10 +469,46 @@ header.header .header-main .customer-support-text .text {
     width: 85px !important;
 }
 .cart-items .ng-scope h4.ng-binding{
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
 }.cart-items .table th, .cart-items .table td {
     padding: 0.75rem 0.2rem !important;    
 }
 .cart-list .quantity-field, .cart-list .quantity-button {
     border: thin solid #b9b9b9;
+}
+.cart-title {
+    background-color: #fff;
+    margin-bottom: 1.2rem;
+    padding: .75rem;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    text-transform: uppercase;
+}
+.cart-title h1{
+    font-size: 20px;
+    margin: 0;
+}
+.order-summary, .coupon-discount{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    background: #fff;
+}
+.title-order{
+    background-image: linear-gradient(90deg,#ebf8ff,#fff);
+    padding: 10px 10px 5px;
+}
+.title-order img, .coupon-discount .coupon-form img{
+    height: 24px;
+    margin-bottom: 6px;
+}
+.title-order span, .coupon-discount .coupon-form span{
+    margin-left: .6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.order-summary p.text-right{
+    margin: 0 10px;
+    padding-bottom: 10px;
+}
+.coupon-discount .coupon-form{
+    margin: 10px;
 }

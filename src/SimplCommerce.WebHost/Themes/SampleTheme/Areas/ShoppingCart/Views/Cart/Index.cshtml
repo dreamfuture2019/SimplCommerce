@@ -57,8 +57,8 @@
     <div class="col-lg-4 col-md-12 col-sm-12">
         <div class="order-summary" ng-if="vm.cart.items.length">
             <div class="title-order">
-                <img src="/themes/SampleTheme/mark.svg"
-                <h4>@Localizer["Order summary"]</h4>
+                <img src="/themes/SampleTheme/mark.svg">
+                <span>@Localizer["Order summary"]</span>
             </div>
             <table class="table">
                 <tr>
@@ -76,17 +76,20 @@
             </table>
             <p class="text-right"><a href="~/checkout/shipping" ng-class="{disabled: !vm.cart.isValid}" class="btn btn-primary">@Localizer["Process to Checkout"]</a></p>
         </div>
-        <div class="coupon-form" ng-if="vm.cart.items.length">
-            <h4>@Localizer["Coupon code"]</h4>
-            <form class="form-inline">
-                <div class="form-group">
-                    <label>{{vm.cart.couponValidationErrorMessage}}</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="couponCode" ng-model="vm.couponCode" placeholder="Enter coupon">
-                    <button type="submit" class="btn btn-default" ng-click="vm.applyCoupon()">@Localizer["Apply"]</button>
-                </div>
-            </form>
+        <div class="coupon-discount">
+            <div class="coupon-form" ng-if="vm.cart.items.length">
+                <img src="/themes/SampleTheme/coupon.svg">
+                <span>@Localizer["Coupon code"]</span>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label>{{vm.cart.couponValidationErrorMessage}}</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="couponCode" ng-model="vm.couponCode" placeholder="Enter coupon">
+                        <button type="submit" class="btn btn-default" ng-click="vm.applyCoupon()">@Localizer["Apply"]</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
