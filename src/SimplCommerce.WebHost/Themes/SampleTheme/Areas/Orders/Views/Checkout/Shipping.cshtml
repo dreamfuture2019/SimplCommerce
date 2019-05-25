@@ -189,10 +189,11 @@
                 </div>
         </div>        
     </div>
-    <div class="col-md-5 ">
+    <div class="col-md-5 all-order-pay">
         <div class="all-order-content">
-            @await Component.InvokeAsync("OrderSummary")
-            <div class="text-right">
+            @await Component.InvokeAsync("OrderSummary")            
+        </div>
+        <div class="text-right">
                 <div class="form-group">
                     <div class="text-right">
                         <button type="submit" class="btn btn-order" disabled>@Localizer["Payment"]</button>
@@ -201,7 +202,6 @@
                 <form asp-area="Order" asp-controller="Checkout" asp-action="Cancel" method="post" id="logoutForm" class="">
                     <button type="submit" class="btn btn-secondary active ">@Localizer["Cancel Order"]</button>
                 </form>
-            </div>
         </div>
     </div>
 </div>
