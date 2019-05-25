@@ -5,9 +5,12 @@
 }
 
 <div class="row">
-    <div class="col-md-8 add-ship">
+    <div class="col-md-7 add-ship">
         <form asp-area="Orders" asp-controller="Checkout" asp-action="Shipping" method="POST" id="checkout-delivery-address">
-            <h3>@Localizer["Shipping address"]</h3>
+            <div class="title-order">
+                <img src="/themes/SampleTheme/Address.svg">
+                <span>@Localizer["Shipping address"]</span>
+            </div>            
             @foreach (var address in Model.ExistingShippingAddresses)
             {
                 <div class="radio">
@@ -86,13 +89,17 @@
                     </div>
                 </div>
             </div>
-            <h3>@Localizer["Shipping methods"]</h3>
+
+            <!-- <h3>@Localizer["Shipping methods"]</h3>
             <div id="shippingMethods">
                 <p>Please choose your shipping address</p>
-            </div>
+            </div> -->
 
             <div>
-                <h3>@Localizer["Billing Address"]</h3>
+                <div class="title-order">
+                    <img src="/themes/SampleTheme/shipping.svg">
+                    <span>@Localizer["Billing Address"]</span>
+                </div>                
                 <label>
                     <input type="checkbox" name="UseShippingAddressAsBillingAddress" checked="@(Model.UseShippingAddressAsBillingAddress ? "checked" : null)" value="true" />
                     @Localizer["Use Selected Shipping Address As Billing Address"]
@@ -178,20 +185,22 @@
                     </div>
                 </div>
             </div>
+            
+        </form>
+        
+    </div>
+    <div class="col-md-5 all-order-content">
+        @await Component.InvokeAsync("OrderSummary")
+        <div class="text-right">
             <div class="form-group">
                 <div class="text-right">
                     <button type="submit" class="btn btn-order" disabled>@Localizer["Payment"]</button>
                 </div>
             </div>
-        </form>
-        <div class="text-right">
             <form asp-area="Order" asp-controller="Checkout" asp-action="Cancel" method="post" id="logoutForm" class="">
                 <button type="submit" class="btn btn-secondary active ">@Localizer["Cancel Order"]</button>
             </form>
         </div>
-    </div>
-    <div class="col-md-4 all-order-content">
-        @await Component.InvokeAsync("OrderSummary")
     </div>
 </div>
 
