@@ -1,8 +1,10 @@
 @media only screen and (max-width: 1366px){
 
 }/* -------------------------end-1366px-------------------------- */
-@media screen and (min-width: 993px){
-    
+@media screen and (min-width: 992px){
+    .add-ship{
+        margin-right: -15px;
+    }
 }
 @media only screen and (max-width: 1200px){
     
