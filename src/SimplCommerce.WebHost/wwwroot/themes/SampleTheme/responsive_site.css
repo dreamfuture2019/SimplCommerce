@@ -2,7 +2,7 @@
 
 }/* -------------------------end-1366px-------------------------- */
 @media screen and (min-width: 992px){
-    .add-ship{
+    .add-ship, .Bill-Address{
         margin-right: -15px;
     }
 }
@@ -107,6 +107,9 @@
     }
     .btco-hover-menu .collapse ul ul.show {
         display: block !important;
+    }
+    .hidden-sm{
+        dispaly:none;
     }
 }/* -------------------------end-768px-------------------------- */
 @media only screen and (max-width: 768px) and (min-width: 577px){
