@@ -496,11 +496,11 @@ header.header .header-main .customer-support-text .text {
     background-image: linear-gradient(90deg,#ebf8ff,#fff);
     padding: 10px 10px 5px;
 }
-.title-order img, .coupon-discount .coupon-form img{
+.title-order img {
     height: 24px;
     margin-bottom: 6px;
 }
-.title-order span, .coupon-discount .coupon-form span{
+.title-order span {
     margin-left: .6rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -508,7 +508,4 @@ header.header .header-main .customer-support-text .text {
 .order-summary p.text-right{
     margin: 0 10px;
     padding-bottom: 10px;
-}
-.coupon-discount .coupon-form{
-    margin: 10px;
 }
