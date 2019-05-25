@@ -30,13 +30,7 @@
         <div class="container">
             <div class="row top-link">                
                 <div class="col top_nav">
-                    <ul class="nav navbar-nav navbar-right">
-			            <li><a asp-area="Core" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
-                        <li><a href="#">Bảng giá bán</a></li>
-                        <li><a href="#">Chế độ bảo hành</a></li>
-                        <li><a href="#">Hình thức thanh toán</a></li>
-                        <li><a href="#">Liên hệ</a></li>                            
-                    </ul>
+                    <vc:menu menu-id="3" component-name="TopMenu"></vc:menu>
                 </div>
                 <div class="right login-reg">                        
                     <ul class="header links nav justify-content-end">
@@ -155,11 +149,11 @@
                 </div>                
                 <div class="col-md-3 col-sm-12 col-xs-12">
                     <h4>THÔNG TIN</h4>
-                    <vc:menu menu-id="2"></vc:menu>
+                    <vc:menu menu-id="2" component-name="Default"></vc:menu>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12">
                     <h4>@Localizer["HỖ TRỢ KHÁCH HÀNG"]</h4>
-                    <vc:menu menu-id="1"></vc:menu>
+                    <vc:menu menu-id="1" component-name="Default"></vc:menu>
                 </div>
             </div>
             <div class="row bottom-footer">

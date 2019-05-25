@@ -136,23 +136,23 @@
         padding-top:5px;
         padding-bottom:5px;
     }
-    .product-list .prd-item {
+    .product-list .prd-item, .page-group-prd .product-list .prd-item {
         max-width: 50% !important;
         flex: 0 0 50% !important;
     }
     .breadcrumb {
         display: none;
     }
-
+    .company_info h2 {
+        display: none;
+    }
 
 
 
 }/* -------------------------end-576px-------------------------- */
 
 @media only screen and (max-width: 480px){
-    .company_info h2 {
-        display: none;
-    }
+    
     .search-box {
         width: 85% !important;
         left: 15px;

@@ -25,6 +25,11 @@
     <None Remove="Themes\SampleTheme\Areas\Catalog\Views\Product\ProductOverview.cshtml" />
     <None Remove="Themes\SampleTheme\Areas\Catalog\Views\Shared\Components\ProductWidget\Default.cshtml" />
     <None Remove="Themes\SampleTheme\Areas\Catalog\Views\_ViewStart.cshtml" />
+    <None Remove="Themes\SampleTheme\Areas\Cms\Views\Page\PageDetail.cshtml" />
+    <None Remove="Themes\SampleTheme\Areas\Cms\Views\Shared\Components\Menu\Default.cshtml" />
+    <None Remove="Themes\SampleTheme\Areas\Cms\Views\Shared\Components\Menu\TopMenu.cshtml" />
+    <None Remove="Themes\SampleTheme\Areas\Cms\Views\_ViewImports.cshtml" />
+    <None Remove="Themes\SampleTheme\Areas\Cms\Views\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

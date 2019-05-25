@@ -20,7 +20,7 @@ namespace SimplCommerce.Module.Cms.Areas.Cms.Components
             _menuRepository = menuRepository;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync(long menuId)
+        public async Task<IViewComponentResult> InvokeAsync(long menuId, string componentName = "Default")
         {
             var menu = await _menuRepository.Query().Include(x => x.MenuItems).ThenInclude(m => m.Entity).FirstOrDefaultAsync(x => x.Id == menuId);
             if(menu == null)
@@ -36,7 +36,7 @@ namespace SimplCommerce.Module.Cms.Areas.Cms.Components
                 menuItemVms.Add(menuItemVm);
             }
 
-            return View(this.GetViewPath(), menuItemVms);
+            return View(this.GetViewPath(componentName), menuItemVms);
         }
 
         private MenuItemVm Map(MenuItem menuItem)
