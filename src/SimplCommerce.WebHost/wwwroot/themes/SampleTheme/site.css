@@ -460,3 +460,19 @@ header.header .header-main .customer-support-text .text {
     color: #fff;
     padding: 0 15px;
 }
+/* -----------------------------cart----------------------------- */
+.cart-list .cart-items > thead > tr > th {    
+    text-transform: capitalize !important;    
+    font-size: 1rem;
+}
+.cart-list .product-image img {
+    width: 85px !important;
+}
+.cart-items .ng-scope h4.ng-binding{
+    font-size: 1rem;
+}.cart-items .table th, .cart-items .table td {
+    padding: 0.75rem 0.2rem !important;    
+}
+.cart-list .quantity-field, .cart-list .quantity-button {
+    border: thin solid #b9b9b9;
+}
