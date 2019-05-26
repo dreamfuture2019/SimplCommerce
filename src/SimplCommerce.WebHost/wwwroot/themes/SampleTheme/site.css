@@ -520,3 +520,8 @@ header.header .header-main .customer-support-text .text {
     margin: 10px 10px 0;
     padding-bottom: 10px;
 }
+/* -----------------------------shopModal----------------------------- */
+.modal-header h5{
+    font-size: 15px;
+}
+.modal-body 

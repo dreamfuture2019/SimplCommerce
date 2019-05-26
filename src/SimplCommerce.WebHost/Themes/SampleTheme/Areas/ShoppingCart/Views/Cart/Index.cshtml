@@ -14,6 +14,33 @@
                     <th></th>
                 </tr>
             </thead>
+            <!-- <tbody>
+                <tr ng-if="vm.cart.items.length" ng-repeat="cartItem in vm.cart.items">
+                    <td class="product-image"><img ng-src="{{cartItem.productImage}}" /></td>
+                    <td class="prdName-quantity"> 
+                        <h4>{{cartItem.productName}}</h4>
+                        <ul class="list-unstyled">
+                            <li ng-repeat="opt in cartItem.variationOptions">
+                                <span>{{opt.optionName}}:</span> {{opt.value}}
+                            </li>
+                        </ul>
+                        <span ng-if="!cartItem.isProductAvailabeToOrder" class="badge badge-pill badge-danger">Not availabe any more</span>
+                        <span ng-if="cartItem.productStockTrackingIsEnabled && cartItem.productStockQuantity < cartItem.quantity" class="badge badge-pill badge-danger">Not enough stock. Available {{cartItem.productStockQuantity}}</span>
+                    </td>
+                    <td class="text-right" style="width: 135px;">{{cartItem.productPriceString}}</td>
+                    <td class="text-center" style="width: 80px;">
+                        <button type="button" class="quantity-button" ng-click="vm.increaseQuantity(cartItem)" name="subtract" value="+">+</button>
+                        <input type="text" class="quantity-field" ng-model="cartItem.quantity" readonly="readonly" />
+                        <button type="button" class="quantity-button" ng-click="vm.decreaseQuantity(cartItem)" name="subtract" value="-">-</button>                        
+                    </td>
+                    <td class="text-right"><button class="btn btn-link" ng-click="vm.removeShoppingCartItem(cartItem)" style="padding-top: 2rem;"><span class="fa fa-remove" aria-hidden="true"></span></button></td>
+                </tr>
+                <tr ng-if="!vm.cart.items.length">
+                    <td colspan="5" class="text-center">
+                        @Localizer["There are no items in this cart."] <a href="~/">@Localizer["Go to shopping"]</a>
+                    </td>
+                </tr>
+            </tbody> -->
             <tbody>
                 <tr ng-if="vm.cart.items.length" ng-repeat="cartItem in vm.cart.items">
                     <td class="product-image"><img ng-src="{{cartItem.productImage}}" /></td>
