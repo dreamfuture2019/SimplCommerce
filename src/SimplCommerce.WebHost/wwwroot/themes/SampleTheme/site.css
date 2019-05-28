@@ -548,10 +548,11 @@ header.header .header-main .customer-support-text .text {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: .3125rem 1.25rem 0 .625rem;
-    width: 340px;
+    width: 335px;
 }
 .cart-item-overview__product-name-wrapper h4{
     font-size: 17px;
+    line-height: 24px;
 }
 .cart-item__cell-quantity{
     display: -webkit-box;
@@ -570,6 +571,7 @@ header.header .header-main .customer-support-text .text {
     -ms-flex-pack: center;
     justify-content: center;
     width: 15.4265%;
+    margin: 0 10px;
 }
 .shop-input-quantity{
     display: -webkit-box;
@@ -586,7 +588,7 @@ header.header .header-main .customer-support-text .text {
 .cart-item__unit-price{
     width: 130px;
     text-align: right;
-    color: #ee4d2d;
+    color: #ee4d2d;    
 }
 
 
