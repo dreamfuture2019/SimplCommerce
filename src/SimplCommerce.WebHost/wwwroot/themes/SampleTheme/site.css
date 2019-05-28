@@ -547,7 +547,7 @@ header.header .header-main .customer-support-text .text {
     -moz-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: .3125rem 1.25rem 0 .625rem;
+    padding: 0.3rem 0.5rem 0 0.5rem;
     width: 335px;
 }
 .cart-item-overview__product-name-wrapper h4{
