@@ -29,11 +29,11 @@
                             <span ng-if="!cartItem.isProductAvailabeToOrder" class="badge badge-pill badge-danger">Not availabe any more</span>
                             <span ng-if="cartItem.productStockTrackingIsEnabled && cartItem.productStockQuantity < cartItem.quantity" class="badge badge-pill badge-danger">Not enough stock. Available {{cartItem.productStockQuantity}}</span>
                         </div>
-                        <div>                                             
-                            <span class="cart-item__unit-price">{{cartItem.productPriceString}}</span>
+                        <div class="cart-item__unit-price">                                             
+                            <span >{{cartItem.productPriceString}}</span>
                         </div>
                         <div class="cart-item__cell-quantity">
-                            <div class="shopee-input-quantity">                                                                                            
+                            <div class="shop-input-quantity">                                                                                            
                                 <button type="button" class="quantity-button" ng-click="vm.decreaseQuantity(cartItem)" name="subtract" value="-">-</button> 
                                 <input type="text" class="quantity-field" ng-model="cartItem.quantity" readonly="readonly" />
                                 <button type="button" class="quantity-button" ng-click="vm.increaseQuantity(cartItem)" name="subtract" value="+">+</button>                                
