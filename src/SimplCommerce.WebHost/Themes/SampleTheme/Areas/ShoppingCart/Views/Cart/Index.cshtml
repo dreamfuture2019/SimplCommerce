@@ -9,14 +9,14 @@
         <div class="cart-page-section__items">
             <div class="cart-page-header">
                 <div class="title-order">
-                    <img src="/themes/SampleTheme/mark.svg">
+                    <img src="/themes/SampleTheme/cart.svg">
                     <span>@Localizer["Sản phẩm"]</span>
                 </div>
             </div>
             <div class="cart-item" ng-if="vm.cart.items.length" ng-repeat="cartItem in vm.cart.items">
                 <div class="cart-item__content">            
                     <div class="cart-item__cell-images">
-                        <div class="product-image"><img ng-src="{{cartItem.productImage}}" /></div>              
+                        <div class="prd-image"><img ng-src="{{cartItem.productImage}}" /></div>              
                     </div>                        
                     <div class="cart-item__cell-name-unit-price">
                         <div class="cart-item-overview__product-name-wrapper">
@@ -33,10 +33,10 @@
                             <span class="cart-item__unit-price">{{cartItem.productPriceString}}</span>
                         </div>
                         <div class="cart-item__cell-quantity">
-                            <div class="shopee-input-quantity">                            
-                                <button type="button" class="quantity-button" ng-click="vm.increaseQuantity(cartItem)" name="subtract" value="+">+</button>
-                                <input type="text" class="quantity-field" ng-model="cartItem.quantity" readonly="readonly" />
+                            <div class="shopee-input-quantity">                                                                                            
                                 <button type="button" class="quantity-button" ng-click="vm.decreaseQuantity(cartItem)" name="subtract" value="-">-</button> 
+                                <input type="text" class="quantity-field" ng-model="cartItem.quantity" readonly="readonly" />
+                                <button type="button" class="quantity-button" ng-click="vm.increaseQuantity(cartItem)" name="subtract" value="+">+</button>                                
                             </div>
                         </div>
                     </div>

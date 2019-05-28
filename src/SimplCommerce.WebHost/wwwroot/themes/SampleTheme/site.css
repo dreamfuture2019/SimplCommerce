@@ -488,7 +488,7 @@ header.header .header-main .customer-support-text .text {
     font-size: 20px;
     margin: 0;
 }
-.order-summary, .coupon-discount, .order-note-form, .cart-items, .add-ship, .all-order-content, .Bill-Address{
+.order-summary, .coupon-discount, .order-note-form, .cart-items, .add-ship, .all-order-content, .Bill-Address, .cart-page-section__items{
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
     background: #fff;
 }
@@ -520,8 +520,64 @@ header.header .header-main .customer-support-text .text {
     margin: 10px 10px 0;
     padding-bottom: 10px;
 }
+.order-note-form{
+    margin-top: 20px;
+}
+.cart-item__content{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-top: 1px solid #dee2e6;
+}
+.cart-item__cell-name-unit-price{
+    display: flex;
+    align-items: center;
+}
+.cart-item-overview__product-name-wrapper{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: .3125rem 1.25rem 0 .625rem;
+    width: 60%;
+}
+.cart-item-overview__product-name-wrapper h4{
+    font-size: 17px;
+}
+
+
+
+
+
+
+.cart-item__cell-actions{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
 /* -----------------------------shopModal----------------------------- */
 .modal-header h5{
     font-size: 15px;
 }
-.modal-body 
+ 
