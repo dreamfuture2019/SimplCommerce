@@ -590,10 +590,10 @@ header.header .header-main .customer-support-text .text {
     text-align: right;
     color: #ee4d2d;    
 }
-button[value=facebook] { 
+button["value=facebook"] { 
     background-color:#3b5998;
   }
-button[value=google] { 
+button["value=google"] { 
     background-color:#d34836;
   }
 
