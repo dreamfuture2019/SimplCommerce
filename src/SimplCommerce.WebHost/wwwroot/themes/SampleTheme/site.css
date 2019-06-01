@@ -334,8 +334,7 @@ header.header .header-main .customer-support-text .text {
     position: absolute;
     width: 100%;
     top: 95px;
-    border: none !important;
-    -webkit-transition: 0.5s all ease;
+    border: none !important;    
 }
 .card:hover .quick-view {
     display: block;
@@ -471,7 +470,7 @@ header.header .header-main .customer-support-text .text {
 .cart-items .ng-scope h4.ng-binding{
     font-size: 15px;
 }
-}.cart-items .table th, .cart-items .table td {
+.cart-items .table th, .cart-items .table td {
     padding: 0.75rem 0.2rem !important;    
 }
 .cart-list .quantity-field, .cart-list .quantity-button {
@@ -590,12 +589,12 @@ header.header .header-main .customer-support-text .text {
     text-align: right;
     color: #ee4d2d;    
 }
-/* button["value=facebook"] { 
+ button["value=facebook"] { 
     background-color:#3b5998;
   }
 button["value=google"] { 
     background-color:#d34836;
-  } */
+  } 
 
 
 
