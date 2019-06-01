@@ -589,13 +589,17 @@ header.header .header-main .customer-support-text .text {
     text-align: right;
     color: #ee4d2d;    
 }
- button["value=facebook"] { 
-    background-color:#3b5998;
-  }
-button["value=google"] { 
-    background-color:#d34836;
-  } 
-
+ 
+button[value=Facebook] {
+    color: #fff;
+    background-color: #4267b2 !important;
+    border-color: #4267b2 !important;
+}
+button[value=google] {
+    color: #fff;
+    background-color: #d34836 !important;
+    border-color: #d34836 !important;
+}
 
 
 .cart-item__cell-actions{
