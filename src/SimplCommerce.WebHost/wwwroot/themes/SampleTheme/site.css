@@ -40,7 +40,7 @@
 .customer-support-text {    
     position: relative;
     margin-top: 40px;
-    width: 20%;    
+       
 }
 
 .customer-support-text .text{
@@ -49,7 +49,7 @@
 .customer-support-text img {
     max-width: 40px;
     position: absolute;
-    right: 140px;
+    right: 125px;
     top: 30px;
     transform: translate(0, -50%);
 }
@@ -237,18 +237,22 @@ header.header .header-main .customer-support-text .text {
 }
 .cart-btn .cart-badge {
     background: #dc3327;
-    border: 2px solid #dc3327;
-    border-radius: 10px;
+    padding: 7px 10px;
+    border-radius: 5px;
     display: inline-block;
-    color: #fff;
-    line-height: 40px;
     position: relative;
-    margin-top: 12px; 
+    margin-top: 12px;
+    width: 100%;
     
 }  
+.cart-badge a b{
+    float: left;
+    padding: 5px 12px 0 0;
+}
 .cart-badge span.badge {
     background: #ffd800 !important;
     color: #333333 !important;
+    top: 12px !important;
 }
 .cart-btn .cart-badge a{
     color: #fff;
