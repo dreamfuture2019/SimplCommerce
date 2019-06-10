@@ -1,5 +1,6 @@
 @media only screen and (max-width: 1366px){
-
+    .hidden-log {display: none;}
+    .hidden-sm {display: block;}
 }/* -------------------------end-1366px-------------------------- */
 @media screen and (min-width: 992px){
     .add-ship, .Bill-Address{
@@ -98,6 +99,9 @@
 }/* -------------------------end-min-width:768px-------------------------- */
 
 @media only screen and (max-width: 768px){
+    .hidden-log {display: block;}
+    .hidden-sm {display: none;}
+
     .cart-item__cell-name-unit-price {
         flex-direction: column;
     }

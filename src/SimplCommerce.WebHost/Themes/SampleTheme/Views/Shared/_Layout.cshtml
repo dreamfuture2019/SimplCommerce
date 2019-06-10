@@ -42,21 +42,30 @@
             <div class="row">
 			    <div class="logo col-lg-3 col-md-3 ">
                     <a asp-area="Core" asp-controller="Home" asp-action="Index">
-                        <img src="~/themes/SampleTheme/LOGO-FUSUN.svg" alt="Fusun" title="Công ty TNHH Fusun">
+                        <img src="~/themes/SampleTheme/LOGO-FUSUN2.svg" alt="Fusun" title="Công ty TNHH Fusun">
                     </a>
                 </div>
                 <div class="col-lg-6 col-md-9 company_info">
-                    <h2>Công ty TNHH Fusun</h2>
-                    <p>Chuyên cung cấp, sửa chữa máy tính, thiết bị điện tử, camera, máy chiếu</p></div>                    
+                    <a asp-area="Core" asp-controller="Home" asp-action="Index" class="hidden-sm">
+                        <img src="~/themes/SampleTheme/banner-1.jpg" alt="Fusun" title="Công ty TNHH Fusun">
+                    </a>
+                     <a asp-area="Core" asp-controller="Home" asp-action="Index" class="hidden-log">
+                        <img src="~/themes/SampleTheme/banner-2.jpg" alt="Fusun" title="Công ty TNHH Fusun">
+                    </a>
+                    <!-- <h2>Công ty TNHH Fusun</h2>
+                    <p>Chuyên cung cấp, sửa chữa máy tính, thiết bị điện tử, camera, máy chiếu</p></div>                     -->
                 <div class="col customer-support-text clearfix">
 					<img src="~/themes/SampleTheme/hotline_image.svg" alt="Hotline">
 					<div class="text"><span>Hotline</span><a href="tel:0933392977">0933 39 29 77</a></div>
+                    <div class="cart-btn hidden-sm">
+                            @await Component.InvokeAsync("CartBadge")
+                    </div>
 				</div>
             </div>            
         </div>
     </div>  
     
-    <div class=" header-menu fw hidden-sm hidden-xs">
+    <div class=" header-menu fw">
                             
 		<div class="container">
 			<div class="row nav-search-cart">
@@ -65,7 +74,7 @@
                         <div class="col-md-10 search-box">
                             @await Component.InvokeAsync("SearchForm")
                         </div>
-                        <div class="cart-btn">
+                        <div class="cart-btn hidden-log">
                             @await Component.InvokeAsync("CartBadge")
                         </div>
                     </div>
@@ -134,16 +143,16 @@
 							<li>
 								<i class="fa fa-map-marker " ></i>
 								<span class="address">
-									Địa chỉ: Số, Đường, Phường, Quận, TP
+									Địa chỉ: 17/1A Phan Văn Hớn, Ấp Nam Lân, Xã Bà Điểm, H. Hóc Môn, Tp. HCM
 								</span>
 							</li>
 							<li>
 								<i class="fa fa-phone " ></i>
-								<a class="fone" href="tel:0933392977">Điện thoại: 0933 39 29 77</a>
+								<a class="fone" href="tel:0933392977">Điện thoại: 0933 39 29 77 - 0979 669 733</a>
 							</li>
 							<li>
 								<i class="fa fa-envelope-o" ></i>
-								<a href="mailto:Sale@fusuntech.com  ">Email: Sale@fusuntech.com</a>
+								<a href="mailto:ctytnhhfusun@gmail.com">Email: ctytnhhfusun@gmail.com</a>
 							</li>
 						</ul>            
                 </div>                

@@ -1,22 +1,23 @@
 ﻿a {text-decoration: none;}
 .top-bar {
-    background-color: #eb3e32 !important;
-    color: #fff !important;
+    background-color: #ffffff !important;
+    color: #dc3327 !important;
 }
 .top-link {
     justify-content: flex-end;
-    border-bottom: 1px solid rgba(255,255,255,0.17);    
+    border-bottom: 1px solid rgba(169, 169, 169, 0.17);    
 }
 .login-reg{
     padding-right: 5px;
 }
 .top-link ul li a{
-    color: #fff;
+    color: #333;
     float: left;
     padding: 0.5rem 0.5rem;
 }
 .top-link ul li a:hover{
     text-decoration: none;
+    color: #dc3327
 }
 .logo img {
     height: 55px;
@@ -371,12 +372,13 @@ header.header .header-main .customer-support-text .text {
     font-size: 1.5rem;
     line-height: 40px;
 }
-.product-detail h3{
+h3.title_module{
     line-height: 1.5em;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin: 15px 0;
     padding-bottom: 5px;
     border-bottom: 1px dashed #c5c5c5;
+    color: #dc3327;
 }
 .body-content h2{
     line-height: 1.5em;
@@ -595,7 +597,7 @@ button[value=Facebook] {
     background-color: #4267b2 !important;
     border-color: #4267b2 !important;
 }
-button[value=google] {
+button[value=Google] {
     color: #fff;
     background-color: #d34836 !important;
     border-color: #d34836 !important;
