@@ -44,7 +44,7 @@
     <div class="mid-head">
         <div class="container">
             <div class="row">
-			    <div class="logo col-lg-2 col-md-2 ">
+			    <div class="logo col-lg-2 col-md-2 hidden-sm">
                     <a asp-area="Core" asp-controller="Home" asp-action="Index">
                         <img src="~/themes/SampleTheme/LOGO-FUSUN2.svg" alt="Fusun" title="Công ty TNHH Fusun">
                     </a>
@@ -60,11 +60,13 @@
                     <p>Chuyên cung cấp, sửa chữa máy tính, thiết bị điện tử, camera, máy chiếu</p>
                     -->
                 </div>                     
-                <div class="col customer-support-text clearfix">
-					<img src="~/themes/SampleTheme/hotline_image.svg" alt="Hotline">
-					<div class="text"><span>Hotline</span><a href="tel:0933392977">0933 39 29 77</a></div>
-                    <div class="cart-btn hidden-sm">
-                            @await Component.InvokeAsync("CartBadge")
+                <div class="col hidden-sm clearfix">
+                    <div class="customer-support-text">
+                        <img src="~/themes/SampleTheme/hotline_image.svg" alt="Hotline">
+                        <div class="text"><span>Hotline</span><a href="tel:0933392977">0933 39 29 77</a></div>
+                    </div>
+                    <div class="cart-btn">
+                        @await Component.InvokeAsync("CartBadge")
                     </div>
 				</div>
             </div>            
