@@ -202,6 +202,9 @@ header.header .header-main .customer-support-text .text {
 .navbar-collapse ul li a{
     color: #fff;
 }
+.search-log {
+    float: right;
+}
 .search-box {
     padding: 9px 0;
 }
@@ -219,9 +222,9 @@ header.header .header-main .customer-support-text .text {
     width: 59% ;
 } */
 
-.form-inline .search-category{
+/* .form-inline .search-category{
     width: 27%;
-}
+} */
 .form-inline .search-input .form-control, .form-inline .search-category .form-control{
     width: 100%;
 }
@@ -269,6 +272,16 @@ header.header .header-main .customer-support-text .text {
 
 /* ------------------------------menu-mb----------------------------- */
 .menu-mb .navbar-collapse{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.55);
+    z-index: 9999;
+}
+.menu-mb .navbar-collapse ul{
     background: #8a170e;
     width: 0px;
     height: 100%;
@@ -278,10 +291,21 @@ header.header .header-main .customer-support-text .text {
     float: left;
     z-index: 1000;
 }
-.menu-mb .show{
+.menu-mb .show ul{
     width: 300px;
 }
-
+.menu-mb .navbar-collapse ul li{
+    width: 100%;
+    float: left;
+    padding: 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    position: relative;
+    overflow: hidden;
+}
+.menu-mb .navbar-collapse ul li a{
+    color: #444;
+    padding-left: 15px;
+}
 /* ------------------------------body-content----------------------------- */
 .body-content h2{
     margin: 25px 0 10px;

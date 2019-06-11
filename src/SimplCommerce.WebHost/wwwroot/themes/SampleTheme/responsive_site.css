@@ -131,7 +131,7 @@
         display: block !important;
     }
     .hidden-sm{
-        dispaly:none;
+        display:none;
     }
     .search-cart .cart-btn .badge-icons{
         margin: 5px;
