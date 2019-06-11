@@ -78,8 +78,11 @@
 		<div class="container">
 			<div class="row nav-search-cart">
                 <div class="col-md-6 col-sm-10 search-cart">
+                    <div class="search-box search-log">
+                        @await Component.InvokeAsync("SearchForm")
+                    </div>
                     <div class="row">
-                        <div class="col-md-10 search-box">
+                        <div class="col-md-10 search-box hidden-log">
                             @await Component.InvokeAsync("SearchForm")
                         </div>
                         <div class="cart-btn hidden-log">
@@ -177,6 +180,11 @@
                 <p class="Owner">&copy; @DateTime.Now.Year - Fusun</p>
                 <p class="designer">Powered by <a href="http://www.dtech24h.com"><strong>Dtech24h.com</strong></a></p>
             </div>
+        </div>
+    </div>
+    <div class="menu-mb">
+        <div class="collapse navbar-collapse" id="navbarMain">
+            @await Component.InvokeAsync("CategoryMenu")
         </div>
     </div>
     <div id="shopModal" class="modal fade" tabindex="-1" role="dialog">
