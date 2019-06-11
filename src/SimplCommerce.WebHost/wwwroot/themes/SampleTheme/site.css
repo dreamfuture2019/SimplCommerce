@@ -281,12 +281,18 @@ header.header .header-main .customer-support-text .text {
     background-color: rgba(0,0,0,0.55);
     z-index: 9999;
 }
-.menu-mb .navbar-collapse ul{
+.title-menu-mb{
+    height: 60px;
+    width: 300px;
     background: #8a170e;
+}
+
+.menu-mb .navbar-collapse ul{
+    background: #fff;
     width: 0px;
     height: 100%;
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
     float: left;
     z-index: 1000;
