@@ -282,25 +282,26 @@ header.header .header-main .customer-support-text .text {
     z-index: 9999;
 }
 .title-menu-mb{
-    height: 60px;
+    height: 42px;
     width: 300px;
-    background: #8a170e;
+    background: #ffd800;
+    border-bottom: 1px solid #333;
 }
 
-.menu-mb .navbar-collapse ul{
+.menu-mb .navbar-collapse ul.navbar-nav{
     background: #fff;
-    width: 0px;
-    height: 100%;
+    width: 0px;    
     position: fixed;
-    top: 60px;
+    top: 42px;
+    bottom: 100px;
     left: 0;
     float: left;
     z-index: 1000;
 }
-.menu-mb .show ul{
+.menu-mb .show ul.navbar-nav {
     width: 300px;
 }
-.menu-mb .navbar-collapse ul li{
+.menu-mb .navbar-collapse ul.navbar-nav li{
     width: 100%;
     float: left;
     padding: 0px;
@@ -308,7 +309,7 @@ header.header .header-main .customer-support-text .text {
     position: relative;
     overflow: hidden;
 }
-.menu-mb .navbar-collapse ul li a{
+.menu-mb .navbar-collapse ul.navbar-nav li a{
     color: #444;
     padding-left: 15px;
 }
@@ -447,14 +448,14 @@ h3.title_module{
     border-bottom: 1px dashed #c5c5c5;
     color: #dc3327;
 }
-/* .body-content h2{
+.body-content h2{
     line-height: 1.5em;
     font-size: 20px;
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px dashed #c5c5c5;    
     text-transform: uppercase;
-} */
+}
 
 
 
