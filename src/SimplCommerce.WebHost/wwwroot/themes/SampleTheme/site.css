@@ -266,6 +266,22 @@ header.header .header-main .customer-support-text .text {
 .carousel-indicators, .add-to-lists {
     display: none;
 }
+
+/* ------------------------------menu-mb----------------------------- */
+.menu-mb .navbar-collapse{
+    background: #8a170e;
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    z-index: 1000;
+}
+.menu-mb .show{
+    width: 300px;
+}
+
 /* ------------------------------body-content----------------------------- */
 .body-content h2{
     margin: 25px 0 10px;
