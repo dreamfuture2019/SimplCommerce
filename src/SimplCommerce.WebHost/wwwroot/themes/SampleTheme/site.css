@@ -287,7 +287,17 @@ header.header .header-main .customer-support-text .text {
     background: #ffd800;
     border-bottom: 1px solid #333;
 }
-
+.title-menu-mb b{
+    padding-left: 15px;
+    margin: 9px 0;
+    float: left;
+}
+.title-menu-mb .navbar-toggler {
+    float: right;
+}
+.title-menu-mb .navbar-toggler .navbar-toggler-icon {
+    padding-top: 4px;
+}
 .menu-mb .navbar-collapse ul.navbar-nav{
     background: #fff;
     width: 0px;    
@@ -313,6 +323,38 @@ header.header .header-main .customer-support-text .text {
     color: #444;
     padding-left: 15px;
 }
+.mobile-support{
+    bottom: 0;
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    background: #fff;
+}
+.mobile-support ul{
+    padding-left:15px;
+}
+.mobile-support ul li{
+    list-style: none;
+    color: #444;
+}
+.mobile-support ul li a{
+    color: #dc3327;
+}
+.menu-mb ul.navbar-nav li.show ul.dropdown-menu{
+    position: relative !important;
+    transform: none !important;
+}
+.menu-mb ul.navbar-nav li.show ul.dropdown-menu li{
+    background: #f1f1f1;
+}
+.menu-mb ul.navbar-nav li.show ul.dropdown-menu li a{
+    margin-left: 15px;
+}
+
+
+
+
+
 /* ------------------------------body-content----------------------------- */
 .body-content h2{
     margin: 25px 0 10px;
