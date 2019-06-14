@@ -1,0 +1,244 @@
+﻿@using System.Globalization
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - Công TNHH FUSUN</title>
+    @RenderSection("additionalMeta", false)
+
+    <link simpl-append-version="true" rel="stylesheet" href="~/lib/bootstrap4/css/bootstrap.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/lib/bootstrap-star-rating/css/star-rating.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/lib/multi-dropdown-menu/css/bootstrap-4-navbar.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/lib/toastr/build/toastr.min.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/modules/core/site.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/themes/SampleTheme/site.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/themes/SampleTheme/responsive_site.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/lib/smoothproducts/css/smoothproducts.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/modules/catalog/product-detail.css" />
+    <script simpl-append-version="true" src="~/lib/angular/angular.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="row top-link">                
+                <div class="col top_nav">
+                    <vc:menu menu-id="3" component-name="TopMenu"></vc:menu>
+                </div>
+                <div class="right login-reg">                        
+                    <ul class="header links nav justify-content-end">
+                        <partial name="_SelectLanguagePartial" />
+                        <partial name="_LoginPartial" />
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mid-head">
+        <div class="container">
+            <div class="row">
+			    <div class="logo col-lg-2 col-md-2 hidden-sm">
+                    <a asp-area="Core" asp-controller="Home" asp-action="Index">
+                        <img src="~/themes/SampleTheme/LOGO-FUSUN2.svg" alt="Fusun" title="Công ty TNHH Fusun">
+                    </a>
+                </div>
+                <div class="col-lg-8 col-md-8 company_info">
+                    <a asp-area="Core" asp-controller="Home" asp-action="Index" class="hidden-sm">
+                        <img src="~/themes/SampleTheme/banner-1.jpg" alt="Fusun" title="Công ty TNHH Fusun">
+                    </a>
+                     <a asp-area="Core" asp-controller="Home" asp-action="Index" class="hidden-log">
+                        <img src="~/themes/SampleTheme/banner-2.jpg" alt="Fusun" title="Công ty TNHH Fusun">
+                    </a>
+                    <!-- <h2>Công ty TNHH Fusun</h2>
+                    <p>Chuyên cung cấp, sửa chữa máy tính, thiết bị điện tử, camera, máy chiếu</p>
+                    -->
+                </div>                     
+                <div class="col hidden-sm clearfix">
+                    <div class="customer-support-text">
+                        <img src="~/themes/SampleTheme/hotline_image.svg" alt="Hotline">
+                        <div class="text"><span>Hotline</span><a href="tel:0933392977">0933 39 29 77</a></div>
+                    </div>
+                    <div class="cart-btn">
+                        @await Component.InvokeAsync("CartBadge")
+                    </div>
+				</div>
+            </div>            
+        </div>
+    </div>  
+    
+    <div class=" header-menu fw">
+                            
+		<div class="container">
+			<div class="row nav-search-cart">
+                <div class="col-md-6 col-sm-10 search-cart">
+                    <div class="search-box search-log hidden-sm">
+                        @await Component.InvokeAsync("SearchForm")
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 search-box hidden-log">
+                            @await Component.InvokeAsync("SearchForm")
+                        </div>
+                        <div class="cart-btn hidden-log">
+                            @await Component.InvokeAsync("CartBadge")
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-6 col-xs-12 col-sm-12 navigator---header category">
+                    <div class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu main-nav">
+                        <div class="container">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            </button>                            
+                            <div class="collapse navbar-collapse hidden-sm" id="navbarMain">
+                                @await Component.InvokeAsync("CategoryMenu")
+                            </div>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+        </div>
+    </div>    
+    <div class="body-content">
+        <div class="container">
+           @RenderBody()
+        </div>
+    </div>
+
+    <div class="section_policy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 section_policy_content">
+                    <img src="~/themes/SampleTheme/policy_image_1.svg" alt="Bảo đảm chất lượng">
+                    <div class="section-policy-padding">
+                        <h3>Bảo đảm chất lượng</h3>
+                        <div class="section_policy_title">Sản phẩm bảo đảm chất lượng.</div>
+                    </div>
+                </div>
+                <div class="col-md-3 section_policy_content">
+                    <img src="~/themes/SampleTheme/policy_image_2.svg" alt="Miễn phí giao hàng">
+                    <div class="section-policy-padding">
+                            <h3>Miễn phí giao hàng</h3>
+                            <div class="section_policy_title">Cho đơn hàng từ 2 triệu đồng.</div>
+                    </div>
+                </div>
+                <div class="col-md-3 section_policy_content">
+                    <img src="~/themes/SampleTheme/policy_image_3.svg" alt="Thanh toán">
+                    <div class="section-policy-padding">
+                        <h3>Thanh toán</h3>
+                        <div class="section_policy_title">Nhận hàng và thanh toán tại nhà</div>
+                    </div>
+                </div>
+                <div class="col-md-3 section_policy_content">
+                    <img src="~/themes/SampleTheme/policy_image_4.svg" alt="Đổi trả hàng">
+                    <div class="section-policy-padding">
+                        <h3>Đổi trả hàng</h3>
+                        <div class="section_policy_title">Được đổi trả trong vòng 7 ngày.</div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>    
+    <div class="footer-content">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <h4 class="company-name">CÔNG TY TNHH FUSUN</h4>                    
+                        <ul class="info">
+							<li>
+								<i class="fa fa-map-marker " ></i>
+								<span class="address">
+									Địa chỉ: 17/1A Phan Văn Hớn, Ấp Nam Lân, Xã Bà Điểm, H. Hóc Môn, Tp. HCM
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-phone " ></i>
+								<a class="fone" href="tel:0933392977">Điện thoại: 0933 39 29 77 - 0979 669 733</a>
+							</li>
+							<li>
+								<i class="fa fa-envelope-o" ></i>
+								<a href="mailto:ctytnhhfusun@gmail.com">Email: ctytnhhfusun@gmail.com</a>
+							</li>
+						</ul>            
+                </div>                
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <h4>THÔNG TIN</h4>
+                    <vc:menu menu-id="2" component-name="Default"></vc:menu>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <h4>@Localizer["HỖ TRỢ KHÁCH HÀNG"]</h4>
+                    <vc:menu menu-id="1" component-name="Default"></vc:menu>
+                </div>
+            </div>
+            <div class="row bottom-footer">
+                <p class="Owner">&copy; @DateTime.Now.Year - Fusun</p>
+                <p class="designer">Powered by <a href="http://www.dtech24h.com"><strong>Dtech24h.com</strong></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="menu-mb">        
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <div class="title-menu-mb">
+                <b>MENU</b>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </button> 
+            </div>            
+            @await Component.InvokeAsync("CategoryMenu")
+            <div class="mobile-support">
+                <ul class="mb-support">
+                    <li><div class="drawer-text-support">HỖ TRỢ</div></li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> HOTLINE: <a href="tel:0933392977" title="0933392977">0933 39 29 77</a></li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> EMAIL: <a href="mailto:ctytnhhfusun@gmail.com" title="ctytnhhfusun@gmail.com">ctytnhhfusun@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="shopModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div id="productOverview" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-padding">
+            </div>
+        </div>
+    </div>
+    <script>
+            window.simplGlobalSetting = {};
+            window.simplGlobalSetting.lang = '@CultureInfo.CurrentCulture.Name';
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script simpl-append-version="true" src="~/lib/bootstrap4/js/bootstrap.js"></script>
+    <script simpl-append-version="true" src="~/lib/multi-dropdown-menu/js/bootstrap-4-navbar.js"></script>
+    <script simpl-append-version="true" src="~/lib/matchheight/jquery.matchHeight.js"></script>
+    <script simpl-append-version="true" src="~/lib/toastr/build/toastr.min.js"></script>
+    <script simpl-append-version="true" src="~/lib/bootstrap-star-rating/js/star-rating.js"></script>
+    @if (CultureInfo.CurrentCulture.Name == "vi-VN")
+    {
+        <script simpl-append-version="true" src="~/lib/bootstrap-star-rating/js/locales/vi-vn.js"></script>
+    }
+    <script simpl-append-version="true" src="~/modules/core/main.js"></script>
+    <script simpl-append-version="true" src="~/modules/shoppingcart/add-to-cart.js"></script>
+    <script simpl-append-version="true" src="~/modules/productcomparison/product-comparison.js"></script>
+    <script simpl-append-version="true" src="~/modules/catalog/product-overview.js"></script>
+    @RenderSection("scripts", required: false)
+
+    <partial name="_AnalyticsScript" />
+</body>
+</html>
+
+
+
+
+
+
+

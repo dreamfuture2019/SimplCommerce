@@ -1,0 +1,158 @@
+﻿@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<div class="row cart-list" ng-app="simpl.shoppingCart" ng-controller="shoppingCartListCtrl as vm" ng-cloak>
+    <div class="col-md-12"><div class="cart-title"><h1>Xác nhận - đơn hàng</h1></div></div>
+    <div class="col-lg-8 col-md-12 col-sm-12">        
+        <!-- ----------------------end__cart-page-section__items-----------------------------------------------> 
+        <div class="cart-page-section__items">
+            <div class="cart-page-header">
+                <div class="title-order">
+                    <img src="/themes/SampleTheme/cart.svg">
+                    <span>@Localizer["Sản phẩm"]</span>
+                </div>
+            </div>
+            <div class="cart-item" ng-if="vm.cart.items.length" ng-repeat="cartItem in vm.cart.items">
+                <div class="cart-item__content">            
+                    <div class="cart-item__cell-images">
+                        <div class="prd-image"><img ng-src="{{cartItem.productImage}}" /></div>              
+                    </div>                        
+                    <div class="cart-item__cell-name-unit-price">
+                        <div class="cart-item-overview__product-name-wrapper">
+                            <h4>{{cartItem.productName}}</h4>
+                            <ul class="list-unstyled">
+                                <li ng-repeat="opt in cartItem.variationOptions">
+                                    <span>{{opt.optionName}}:</span> {{opt.value}}
+                                </li>
+                            </ul>
+                            <span ng-if="!cartItem.isProductAvailabeToOrder" class="badge badge-pill badge-danger">Not availabe any more</span>
+                            <span ng-if="cartItem.productStockTrackingIsEnabled && cartItem.productStockQuantity < cartItem.quantity" class="badge badge-pill badge-danger">Not enough stock. Available {{cartItem.productStockQuantity}}</span>
+                        </div>
+                        <div class="cart-item__unit-price">                                             
+                            <span >{{cartItem.productPriceString}}</span>
+                        </div>
+                        <div class="cart-item__cell-quantity">
+                            <div class="shop-input-quantity">                                                                                            
+                                <button type="button" class="quantity-button" ng-click="vm.decreaseQuantity(cartItem)" name="subtract" value="-">-</button> 
+                                <input type="text" class="quantity-field" ng-model="cartItem.quantity" readonly="readonly" />
+                                <button type="button" class="quantity-button" ng-click="vm.increaseQuantity(cartItem)" name="subtract" value="+">+</button>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item__cell-actions">  
+                        <button class="cart-item__action btn btn-link" ng-click="vm.removeShoppingCartItem(cartItem)">
+                            <span class="fa fa-remove" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="!vm.cart.items.length">
+                <div colspan="5" class="text-center">
+                    @Localizer["There are no items in this cart."] <a href="~/">@Localizer["Go to shopping"]</a>
+                </div>
+            </div>
+        </div>
+         <!-- ----------------------end__cart-page-section__items----------------------------------------------- -->        
+        <!--        
+        <table class="table table-striped cart-items">
+            <thead class="hidden-sm">
+                <tr class="title-order">
+                    <th colspan="2">@Localizer["Product"]</th>
+                    <th class="text-right">@Localizer["Price"]</th>
+                    <th class="text-center">@Localizer["Quantity"]</th>
+                    <th></th>
+                </tr>
+            </thead>            
+            <tbody>
+                <tr ng-if="vm.cart.items.length" ng-repeat="cartItem in vm.cart.items">
+                    <td class="product-image"><img ng-src="{{cartItem.productImage}}" /></td>
+                    <td>
+                        <h4>{{cartItem.productName}}</h4>
+                        <ul class="list-unstyled">
+                            <li ng-repeat="opt in cartItem.variationOptions">
+                                <span>{{opt.optionName}}:</span> {{opt.value}}
+                            </li>
+                        </ul>
+                        <span ng-if="!cartItem.isProductAvailabeToOrder" class="badge badge-pill badge-danger">Not availabe any more</span>
+                        <span ng-if="cartItem.productStockTrackingIsEnabled && cartItem.productStockQuantity < cartItem.quantity" class="badge badge-pill badge-danger">Not enough stock. Available {{cartItem.productStockQuantity}}</span>
+                    </td>
+                    <td class="text-right" style="width: 135px;">{{cartItem.productPriceString}}</td>
+                    <td class="text-center" style="width: 80px;">
+                        <button type="button" class="quantity-button" ng-click="vm.increaseQuantity(cartItem)" name="subtract" value="+">+</button>
+                        <input type="text" class="quantity-field" ng-model="cartItem.quantity" readonly="readonly" />
+                        <button type="button" class="quantity-button" ng-click="vm.decreaseQuantity(cartItem)" name="subtract" value="-">-</button>                        
+                    </td>
+                    <td class="text-right"><button class="btn btn-link" ng-click="vm.removeShoppingCartItem(cartItem)" style="padding-top: 2rem;"><span class="fa fa-remove" aria-hidden="true"></span></button></td>
+                </tr>
+                <tr ng-if="!vm.cart.items.length">
+                    <td colspan="5" class="text-center">
+                        @Localizer["There are no items in this cart."] <a href="~/">@Localizer["Go to shopping"]</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        -->
+        <div class="order-note-form">
+            <div class="title-order">
+                <img src="/themes/SampleTheme/note.svg">
+                <span>@Localizer["Order note"]</span>
+            </div>            
+            <form>
+                <div class="form-group">
+                    <textarea rows="3" class="form-control" name="orderNote" ng-model="vm.cart.orderNote" placeholder="Enter order note"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default pull-right" ng-click="vm.saveOrderNote()">Save order note</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12 order-cart">
+        <div class="order-summary" ng-if="vm.cart.items.length">
+            <div class="title-order">
+                <img src="/themes/SampleTheme/mark.svg">
+                <span>@Localizer["Order summary"]</span>
+            </div>
+            <table class="table">
+                <tr>
+                    <td>@Localizer["Subtotal"]</td>
+                    <td>{{vm.cart.subTotalString}}</td>
+                </tr>
+                <tr>
+                    <td>@Localizer["Discount"] {{vm.cart.couponCode}}</td>
+                    <td>{{vm.cart.discountString}}</td>
+                </tr>
+                <tr>
+                    <td>@Localizer["Order Total"]</td>
+                    <td><strong>{{vm.cart.orderTotalString}}</strong></td>
+                </tr>
+            </table>
+
+            
+        </div>
+        <div class="coupon-discount">
+            <div class="coupon-form" ng-if="vm.cart.items.length">
+                <div class="title-order">
+                    <img src="/themes/SampleTheme/coupon.svg">
+                    <span>@Localizer["Coupon code"]</span>
+                </div>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label>{{vm.cart.couponValidationErrorMessage}}</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="couponCode" ng-model="vm.couponCode" placeholder="Enter coupon">
+                        <button type="submit" class="btn btn-default" ng-click="vm.applyCoupon()">@Localizer["Apply"]</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p class="text-right"><a href="~/checkout/shipping" ng-class="{disabled: !vm.cart.isValid}" class="btn btn-primary">@Localizer["Process to Checkout"]</a></p>
+    </div>
+</div>
+
+@section head{
+    <script simpl-append-version="true" src="~/modules/shoppingcart/shoppingcart-list.js"></script>
+    <script simpl-append-version="true" src="~/modules/shoppingcart/shoppingcart-service.js"></script>
+}

@@ -1,0 +1,12 @@
+﻿@model IEnumerable<SimplCommerce.Module.Cms.Areas.Cms.ViewModels.MenuItemVm>
+
+<ul class="nav navbar-nav navbar-right">
+    @foreach (var item in Model)
+    {
+    <li>
+        <a href="@item.Link">
+            @item.Name
+        </a>
+    </li>
+    }
+</ul>

@@ -1,0 +1,15 @@
+﻿@model IList<SimplCommerce.Module.Catalog.Areas.Catalog.ViewModels.ProductThumbnail>
+
+@if (Model.Any())
+{
+<h3 class="title_module p-t-25 p-b-25">@Localizer["Sản phẩm bạn xem gần đây"]</h3>
+<div class="row product-list">
+    @foreach (var product in Model)
+    {
+        <div class="col-sm-6 col-md-2 prd-item">
+            <partial name="/Areas/Catalog/Views/Shared/_ProductThumbnail.cshtml" model="product" />
+        </div>             
+    }
+</div>
+}
+                                            
