@@ -21,7 +21,7 @@
     color: #333
 }
 .logo img {
-    width: 100%;
+    
     margin: 15px 0;
 }
 .company_info{
@@ -236,13 +236,13 @@ header.header .header-main .customer-support-text .text {
 .search-btn{
     position: relative;
     border: 0 none;
-    background: #ffd800;
+    background: #008000;
     width: 50px;
     float: left;
     text-align: center;
     height: 38px;
     cursor: pointer;
-    color: #363636;
+    color: #fff;
     margin-left: 3px;
 }
 .cart-btn .cart-badge {
