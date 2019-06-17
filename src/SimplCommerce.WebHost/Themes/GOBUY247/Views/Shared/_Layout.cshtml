@@ -34,7 +34,7 @@
                 </div>
                 <div class="right login-reg">                        
                     <ul class="header links nav justify-content-end">
-                        <partial name="_SelectLanguagePartial" />
+                        <!-- <partial name="_SelectLanguagePartial" /> -->
                         <partial name="_LoginPartial" />
                     </ul>
                 </div>
@@ -44,60 +44,41 @@
     <div class="mid-head">
         <div class="container">
             <div class="row">
-			    <div class="logo col-lg-2 col-md-2 hidden-sm">
-                    <a asp-area="Core" asp-controller="Home" asp-action="Index">
-                        <img src="~/themes/SampleTheme/LOGO-FUSUN2.svg" alt="Fusun" title="Công ty TNHH Fusun">
-                    </a>
+                <div class="col-lg-3 col-md-3 col-100-h">					
+                    <button class="navbar-toggler visible-sm visible-xs" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </button>
+					<div class="logo"><a href="/" class="logo-wrapper" title="Ant Green"><img src="~/themes/gobuy247/gobuy247.svg" alt="Shop Gobuy247" title="Shop Gobuy247"></a></div>
+					<div class="mobile-cart visible-sm visible-xs">
+						<div class="cart-btn">
+                            @await Component.InvokeAsync("CartBadge")
+                        </div>
+					</div>
+				</div>
+                <div class="col-lg-5 col-md-5 search-box">                
+                    @await Component.InvokeAsync("SearchForm")                
                 </div>
-                <div class="col-lg-8 col-md-8 company_info">
-                    <a asp-area="Core" asp-controller="Home" asp-action="Index" class="hidden-sm">
-                        <img src="~/themes/SampleTheme/banner-1.jpg" alt="Fusun" title="Công ty TNHH Fusun">
-                    </a>
-                     <a asp-area="Core" asp-controller="Home" asp-action="Index" class="hidden-log">
-                        <img src="~/themes/SampleTheme/banner-2.jpg" alt="Fusun" title="Công ty TNHH Fusun">
-                    </a>
-                    
-                </div>                     
-                <div class="col hidden-sm clearfix">
-                    <div class="customer-support-text">
-                        <img src="~/themes/SampleTheme/hotline_image.svg" alt="Hotline">
-                        <div class="text"><span>Hotline</span><a href="tel:0933392977">0933 39 29 77</a></div>
+                <div class="col-lg-4 col-md-4 text-right hidden-sm hidden-xs clearfix">
+					<div class="customer-support-text">
+                        <img src="~/themes/gobuy247/hotline_image.svg" alt="Hotline">
+                        <div class="text"><span>Hotline</span><a href="tel:0933392977">0982 88 99 39</a></div>
                     </div>
                     <div class="cart-btn">
                         @await Component.InvokeAsync("CartBadge")
                     </div>
-				</div>
+				</div>			    
             </div>            
         </div>
     </div>  
     
-    <div class=" header-menu fw">
-                            
+    <div class=" header-menu fw hidden-sm hidden-xs">                            
 		<div class="container">
-			<div class="row nav-search-cart">
-                <div class="col-md-6 col-sm-10 search-cart">
-                    <div class="search-box search-log hidden-sm">
-                        @await Component.InvokeAsync("SearchForm")
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 search-box hidden-log">
-                            @await Component.InvokeAsync("SearchForm")
-                        </div>
-                        <div class="cart-btn hidden-log">
-                            @await Component.InvokeAsync("CartBadge")
-                        </div>
-                    </div>
-                </div>
+			<div class="row">                
 				<div class="col-md-6 col-xs-12 col-sm-12 navigator---header category">
-                    <div class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu main-nav">
-                        <div class="container">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
-                            </button>                            
-                            <div class="collapse navbar-collapse hidden-sm" id="navbarMain">
-                                @await Component.InvokeAsync("CategoryMenu")
-                            </div>
-                        </div>
+                    <div class="navbar navbar-expand-lg navbar-light bg-light btco-hover-menu main-nav">                                                                               
+                        <div class="collapse navbar-collapse hidden-sm" id="navbarMain">
+                            @await Component.InvokeAsync("CategoryMenu")
+                        </div>                        
                     </div>
                 </div>                  
             </div>
@@ -113,28 +94,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 section_policy_content">
-                    <img src="~/themes/SampleTheme/policy_image_1.svg" alt="Bảo đảm chất lượng">
+                    <img src="~/themes/gobuy247/policy_image_1.svg" alt="Bảo đảm chất lượng">
                     <div class="section-policy-padding">
                         <h3>Bảo đảm chất lượng</h3>
                         <div class="section_policy_title">Sản phẩm bảo đảm chất lượng</div>
                     </div>
                 </div>
                 <div class="col-md-3 section_policy_content">
-                    <img src="~/themes/SampleTheme/policy_image_2.svg" alt="Miễn phí giao hàng">
+                    <img src="~/themes/gobuy247/policy_image_2.svg" alt="Miễn phí giao hàng">
                     <div class="section-policy-padding">
                             <h3>Giao hàng</h3>
                             <div class="section_policy_title">Giao hàng tận nơi toàn quốc</div>
                     </div>
                 </div>
                 <div class="col-md-3 section_policy_content">
-                    <img src="~/themes/SampleTheme/policy_image_3.svg" alt="Thanh toán">
+                    <img src="~/themes/gobuy247/policy_image_3.svg" alt="Thanh toán">
                     <div class="section-policy-padding">
                         <h3>Thanh toán</h3>
                         <div class="section_policy_title">Nhận hàng và thanh toán tại nhà</div>
                     </div>
                 </div>
                 <div class="col-md-3 section_policy_content">
-                    <img src="~/themes/SampleTheme/policy_image_4.svg" alt="Đổi trả hàng">
+                    <img src="~/themes/gobuy247/policy_image_4.svg" alt="Đổi trả hàng">
                     <div class="section-policy-padding">
                         <h3>Đổi trả hàng</h3>
                         <div class="section_policy_title">Được đổi trả trong vòng 30 ngày</div>
@@ -147,12 +128,12 @@
             <div class="container">
             <div class="row">
                 <div class="col-md-5 col-sm-12 col-xs-12">
-                    <h4 class="company-name">Shop phụ kiện Máy tính - Laptop Gobuy247</h4>                    
+                    <h4 class="company-name">Shop Gobuy247 - Cung cấp phụ kiện Máy tính, Laptop</h4>                    
                         <ul class="info">
 							<li>
 								<i class="fa fa-map-marker " ></i>
 								<span class="address">
-									Địa chỉ: 110 Nguyễn Văn Lượng, Phường 17, Q. Gò Vấp, Tp. HCM
+									110 Nguyễn Văn Lượng, Phường 17, Q. Gò Vấp, Tp. HCM
 								</span>
 							</li>
 							<li>

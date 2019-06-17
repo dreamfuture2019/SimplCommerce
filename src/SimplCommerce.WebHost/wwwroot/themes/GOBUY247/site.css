@@ -84,7 +84,7 @@ header.header .header-main .customer-support-text .text {
     margin-left: 15px;
 }
 .navbar{
-    background-color: #dc3327 !important;
+    background-color: #008000 !important;
 }
 .main-nav {
     margin-left: -15px;
@@ -95,6 +95,9 @@ header.header .header-main .customer-support-text .text {
 #navbarMain > ul {
     margin: 0;
 }
+#navbarMain ul li.nav-item:first-child{
+    border-left: thin solid #015a01;
+}
 .top_nav .navbar-nav {
     flex-direction: row;
 }
@@ -103,18 +106,18 @@ header.header .header-main .customer-support-text .text {
 }
 .header-menu{
     display: block;    
-    background: #dc3327;
+    background: #008000;
 }
 /* -------------css-dropmenu----------------------- */
 .btco-hover-menu .collapse ul > li.nav-item:hover > a.nav-link {
-    background: #c72d22;
+    background: #015a01;
     color: #fff !important;
 }
 .btco-hover-menu .collapse ul > li:hover > a > ul > li > a{    
     color: #252525 !important;
 }
 .btco-hover-menu .collapse ul > li > a > ul > li:hover > a{    
-    color: #ff2d37 !important;
+    color: #015a01 !important;
 }
 .btco-hover-menu .collapse ul ul.dropdown-menu {
     overflow: hidden;
@@ -180,13 +183,13 @@ header.header .header-main .customer-support-text .text {
     text-align: left;
 }
 .btco-hover-menu .collapse ul ul.dropdown-menu li:hover a{
-    color: #ff2d37;
+    color: #015a01;
 }
 .btco-hover-menu .collapse ul ul.dropdown-menu li.show ul.show li a{
     color: #252525;
 }
 .btco-hover-menu .collapse ul ul.dropdown-menu li.show ul.show li:hover a{
-    color: #ff2d37;
+    color: #015a01;
 }
 .navbar-toggler-icon .fa-bars{
     font-size: 30px;
@@ -339,7 +342,7 @@ header.header .header-main .customer-support-text .text {
     color: #444;
 }
 .mobile-support ul li a{
-    color: #dc3327;
+    color: #015a01;
 }
 .menu-mb ul.navbar-nav li.show ul.dropdown-menu{
     position: relative !important;
@@ -494,7 +497,7 @@ h3.title_module{
     margin: 15px 0;
     padding-bottom: 5px;
     border-bottom: 1px dashed #c5c5c5;
-    color: #dc3327;
+    color: #015a01;
 }
 .body-content h2{
     line-height: 1.5em;
