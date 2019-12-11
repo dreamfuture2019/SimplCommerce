@@ -32,9 +32,12 @@
                 <div class="col top_nav">
                     <vc:menu menu-id="3" component-name="TopMenu"></vc:menu>
                 </div>
+                <div class="search-box search-log hidden-sm">
+                    @await Component.InvokeAsync("SearchForm")
+                </div>
                 <div class="right login-reg">                        
                     <ul class="header links nav justify-content-end">
-                        <partial name="_SelectLanguagePartial" />
+                        <!-- <partial name="_SelectLanguagePartial" /> -->
                         <partial name="_LoginPartial" />
                     </ul>
                 </div>
@@ -56,9 +59,7 @@
                      <a asp-area="Core" asp-controller="Home" asp-action="Index" class="hidden-log">
                         <img src="~/themes/SampleTheme/banner-2.jpg" alt="Fusun" title="Công ty TNHH Fusun">
                     </a>
-                    <!-- <h2>Công ty TNHH Fusun</h2>
-                    <p>Chuyên cung cấp, sửa chữa máy tính, thiết bị điện tử, camera, máy chiếu</p>
-                    -->
+                    
                 </div>                     
                 <div class="col hidden-sm clearfix">
                     <div class="customer-support-text">
@@ -78,9 +79,9 @@
 		<div class="container">
 			<div class="row nav-search-cart">
                 <div class="col-md-6 col-sm-10 search-cart">
-                    <div class="search-box search-log hidden-sm">
+                    <!-- <div class="search-box search-log hidden-sm">
                         @await Component.InvokeAsync("SearchForm")
-                    </div>
+                    </div> -->
                     <div class="row">
                         <div class="col-md-10 search-box hidden-log">
                             @await Component.InvokeAsync("SearchForm")
